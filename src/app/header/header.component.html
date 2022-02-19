@@ -1,0 +1,25 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg col-md-5">
+                <nav>
+                    <ul>
+                        <li *ngFor="let items of listItems">
+                            <a [routerLink]="items.itemLink">{{ items.itemLabel | translate }}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-brand" class="col-lg-2 col-md-2">
+                <a href="">
+                    <img src="assets/img/hydra_logo.svg">
+                </a>
+            </div>
+            <div id="sponsors" class="col-lg-5 col-md-5">
+                <a href="https://www.anareus.cz/" target="_blank">
+                    <img src="assets/img/sponzored_by_anareus.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

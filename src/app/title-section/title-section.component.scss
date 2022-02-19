@@ -1,0 +1,44 @@
+.title-section {
+    height: 150px;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: initial;
+    display: flex;
+
+    h1 {
+        color: white;
+        font-size: 57px;
+        font-weight: bold;
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        line-height: 64px;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        color: white;
+        margin: 0;
+    }
+
+    &:before {
+        content: "47.4979° N, 19.0402° E";
+        position: absolute;
+        left: -90px;
+        color: rgba(255, 255, 255, 0.1);
+        transform: rotate(-90deg);
+        font-size: 11px;
+    }
+
+    &:after {
+        left: -21px;
+        top: 75px;
+        content: "";
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .1);
+    }
+}

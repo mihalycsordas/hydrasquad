@@ -1,0 +1,32 @@
+{
+    "NavigationItems": {
+        "HomePage": "Galéria",
+        "AboutUs": "Rólunk",
+        "Partners": "Partnerek",
+        "Events": "Események",
+        "ContactUs": "Kapcsolat",
+
+    },
+    "HomePage": {
+        "Title": "Hail Hydra!",
+        "PageDescription": "Üdvözöllek a Hydra Airsoft Squad weboldalán!"
+    },
+    "AboutUsPage": {
+
+    },
+    "PartnersPage": {
+
+    },
+    "EventsPage": {
+        "Title": "Események",
+        "PageDescription": "",
+        "EventDetails": {
+            "EventLocation": "Helyzsin:",
+            "EventDate": "Időpont:",
+            "EventLink": "Bővebben:"
+        }
+    },
+    "ContactUsPage": {
+
+    }
+}

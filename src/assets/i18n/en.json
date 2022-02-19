@@ -1,0 +1,33 @@
+{
+    "NavigationItems": {
+        "HomePage": "Gallery",
+        "AboutUs": "About Us",
+        "Partners": "Partners",
+        "Events": "Események",
+        "ContactUs": "Contact Us"
+
+    },
+    "HomePage": {
+        "Title": "Hail Hydra!",
+        "PageDescription": "English text"
+    },
+    "AboutUsPage": {
+
+    },
+    "PartnersPage": {
+
+    },
+    "EventsPage": {
+        "Title": "Events",
+        "PageDescription": "",
+        "EventDetails": {
+            "EventName": "",
+            "EventLocation": "",
+            "EventDate": "",
+            "EventLink": ""
+        }
+    },
+    "ContactUsPage": {
+
+    }
+}

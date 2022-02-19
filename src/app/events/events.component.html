@@ -1,0 +1,19 @@
+<app-title-section titleText="Események"
+                   titleDescription=""></app-title-section>
+<div class="events">
+    <ul>
+        <ng-container *ngFor="let eventImage of incomingEvents, let i=index">
+            <li class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <figure>
+                    <img [src]="eventImage.media_url" [alt]="eventImage.caption" loading="lazy">
+                </figure>
+                <h2>{{ eventImage.name }}</h2>
+                <div class="event-details-wrapper">
+                    <p>Helyzsin: <b>{{ eventImage.location }}</b></p>
+                    <p>Időpont: <b>{{ eventImage.eventTime }}</b></p>
+                    <p>Bővebben: <a href="{{ eventImage.eventLink }}" target="_blank">Link</a></p>
+                </div>
+            </li>
+        </ng-container>
+    </ul>
+</div>

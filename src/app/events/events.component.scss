@@ -1,0 +1,52 @@
+
+.events {
+    width: 100%;
+    display: inline-block;
+    margin: 30px 0;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            float: left;
+            padding: 0 15px;
+            list-style-type: none;
+            margin-bottom: 30px;
+
+            h2 {
+                font-family: "Anton", sans-serif;
+            }
+
+            .event-details-wrapper {
+                p {
+                    margin-bottom: 0;
+
+                    b {
+                        font-weight: bold;
+                    }
+
+                    a {
+                        color: #ef4a4a;
+                    }
+                }
+            }
+
+            figure {
+                img {
+                    height: 294px;
+                    width: 100%;
+                    object-fit: cover;
+                    filter: grayscale(1);
+                    transition: transform .4s;
+
+                    &:hover {
+                        filter: grayscale(0);
+                        transform: scale(1.05);
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+header {
+    background-color: #ef4a4a;
+
+    &:before {
+        content: "";
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        background-size: cover !important;
+        background: url("../../assets/img/header_bg2.png") no-repeat center center;
+    }
+
+    .container {
+        position: relative;
+        background: url("../../assets/img/header_effect.svg") no-repeat center 140px;
+
+        &:before, &:after {
+            top: 0;
+            content: "";
+            width: 1px;
+            height: 150px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .10);
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+    }
+
+    nav {
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        flex-direction: column;
+
+        &:before {
+            left: -10px;
+            top: 75px;
+            content: "";
+            width: 20px;
+            height: 1px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .10);
+        }
+
+        ul {
+            padding: 0;
+            margin: 0 0 0 10px;
+
+            li {
+                float: left;
+                list-style-type: none;
+                margin: 0 20px;
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #222;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding-bottom: 5px;
+                        border-bottom: 2px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    #header-brand {
+        text-align: center;
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        flex-direction: column;
+
+        a {
+            pointer-events: none;
+        }
+
+        &:before, &:after {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 1px;
+            content: "";
+            height: 25px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .10);
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+    }
+
+    #sponsors {
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        flex-direction: column;
+
+        &:before {
+            right: -10px;
+            top: 75px;
+            content: "";
+            width: 20px;
+            height: 1px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .10);
+        }
+
+        a {
+            pointer-events: none;
+
+            img {
+                float: right;
+                margin-right: 10px;
+            }
+        }
+    }
+}
