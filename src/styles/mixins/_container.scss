@@ -1,0 +1,22 @@
+@use "layout/breakpoints";
+
+@mixin container {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include breakpoints.from-mobile {
+        width: 100%;
+    }
+
+    @include breakpoints.from-tablet {
+        width: 750px;
+    }
+
+    @include breakpoints.from-desktop {
+        width: 970px;
+    }
+
+    @include breakpoints.from-large{
+        width: 1170px;
+    }
+}

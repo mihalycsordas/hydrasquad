@@ -1,0 +1,56 @@
+@import 'abstracts/colors';
+
+@import 'base/reset';
+
+@import 'mixins/container';
+
+@import 'layout/breakpoints';
+
+@import 'utilities/display';
+
+app-title-section{
+    position: relative;
+    display: block;
+    &:after {
+        right: -30px;
+        top: 75px;
+        content: "";
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .1);
+    }
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #222222;
+    min-height: calc(100vh - 150px);
+    &:before{
+        content: "";
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 300px;
+        position: absolute;
+        background-color: #ffffff0d;
+    }
+    main.container{
+        position: relative;
+        &:before, &:after{
+            top: 0;
+            content: "";
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(255,255,255,.05);
+        }
+        &:before{
+            left: 0;
+        }
+        &:after{
+            right: 0;
+        }
+    }
+}
