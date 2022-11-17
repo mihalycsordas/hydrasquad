@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { moduleMetadata } from '@storybook/angular';
 import { Meta, Story } from '@storybook/angular/types-6-0';
 import {LinkComponent} from "./link.component";
+import {RouterTestingModule} from "@angular/router/testing";
 
 export default {
   title: 'Atoms/Links',
   component: LinkComponent,
   decorators: [
     moduleMetadata({
-      imports: [CommonModule],
+      imports: [CommonModule, RouterTestingModule],
       declarations: [LinkComponent],
     }),
   ],
