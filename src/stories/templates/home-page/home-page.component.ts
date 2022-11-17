@@ -8,4 +8,10 @@ import {NavigationItem} from "@app/header/models/navigation-item.interface";
 })
 export default class TemplateHomePageComponent {
     @Input() listItems: Array<NavigationItem>;
+
+    @Input()
+    titleText: string;
+
+    @Input()
+    titleDescription: string;
 }

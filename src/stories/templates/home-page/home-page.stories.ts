@@ -4,6 +4,7 @@ import type { Story, Meta } from '@storybook/angular';
 import HomePageComponent from "./home-page.component";
 import {HeaderModule} from "../../../app/header/header.module";
 import {OrganismsModule} from "../../organisms/organisms.module";
+import {Input} from "@angular/core";
 
 
 export default {
@@ -35,5 +36,12 @@ HomePage.args = {
             itemLabel: 'Valami',
             itemLink: '#'
         },
-    ]
+    ],
+    titleText: 'Lorem ipsum',
+    titleDescription: 'Lorem ipsum dolor sit amet',
 }
+
+HomePage.parameters = {
+    // Set the viewports in Chromatic at a story level.
+    chromatic: { viewports: [320, 1200] },
+};
