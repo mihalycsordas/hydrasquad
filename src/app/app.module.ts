@@ -7,11 +7,15 @@ import {HeaderModule} from './header/header.module';
 import {AppRoutingModule} from './app-routing.module';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FooterModule} from './footer/footer.module';
-import { TitleService } from './services/page-title/title-service';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {I18nModule} from './services/i18n/i18n.module';
-import {ContentfulService} from './services/contentful/contentful.service';
+import {AtomsModule} from "@atoms/atoms.module";
+import {AboutUsModule} from "@app/about-us/about-us.module";
+import {HomeModule} from "@app/home/home.module";
+import {ContactUsModule} from "@app/contact-us/contact-us.module";
+import {EventsModule} from "@app/events/events.module";
+import {TemplatesModule} from "../stories/templates/templates.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -37,11 +41,15 @@ export function HttpLoaderFactory(http: HttpClient) {
         I18nModule,
         HeaderModule,
         FooterModule,
-        AppRoutingModule
+        AppRoutingModule,
+        AboutUsModule,
+        HomeModule,
+        ContactUsModule,
+        EventsModule,
+
+        TemplatesModule
     ],
     providers: [
-        TitleService,
-        ContentfulService
     ],
     bootstrap: [AppComponent]
 })

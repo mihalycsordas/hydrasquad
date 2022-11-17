@@ -5,7 +5,7 @@
                 <nav>
                     <ul>
                         <li *ngFor="let items of listItems">
-                            <a [routerLink]="items.itemLink">{{ items.itemLabel | translate }}</a>
+                            <app-link color="primary" [routerLink]="items.itemLink" [text]="items.itemLabel"></app-link>
                         </li>
                     </ul>
                 </nav>

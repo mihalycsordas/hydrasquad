@@ -5,18 +5,19 @@ import {RouterModule} from '@angular/router';
 import {HeaderComponent} from './header.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {I18nModule} from '../services/i18n/i18n.module';
+import {TemplatesModule} from "../../stories/templates/templates.module";
 
 @NgModule({
     imports: [
         CommonModule,
         BrowserModule,
         RouterModule,
-
         MatGridListModule,
-        I18nModule
+        I18nModule,
+        TemplatesModule
     ],
     exports: [
-        HeaderComponent
+        HeaderComponent,
     ],
     declarations: [HeaderComponent]
 })

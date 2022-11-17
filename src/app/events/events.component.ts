@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IncomingEvents} from '../services/events/model/incoming-events';
+import {IncomingEvents} from "@app/events/models/events.interface";
 
 @Component({
     selector: 'app-events',

@@ -1,0 +1,16 @@
+@use "src/styles/abstracts/colors";
+
+.link {
+    &--primary {
+        color: #222;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+        }
+    }
+}

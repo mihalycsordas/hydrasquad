@@ -1,12 +1,14 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {PartnersComponent} from './partners.component';
-import {TitleSectionModule} from '../title-section/title-section.module';
+import {AtomsModule} from "@atoms/atoms.module";
+import {PartnersRoutingModule} from "@app/partners/partners-routing.module";
 
 @NgModule({
     imports: [
         CommonModule,
-        TitleSectionModule
+        AtomsModule,
+        PartnersRoutingModule
     ],
     exports: [
         PartnersComponent

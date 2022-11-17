@@ -3,6 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+      "paths": {
+          "@app/*": [
+              "src/app/*"
+          ],
+          "@atoms/*": [
+              "src/stories/atoms/*"
+          ],
+          "@molecules/*": [
+              "src/stories/molecules/*"
+          ],
+          "@organisms/*": [
+              "src/stories/organisms/*"
+          ]
+      },
     "outDir": "./dist/out-tsc",
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,

@@ -1,0 +1,111 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta title="UI Components/Colors"/>
+
+# Teqball brand colors
+
+<style>{`
+
+	table{
+	background-color: @black;
+		width: 100%;
+	}
+
+	table thead tr th{
+		text-align: left;
+		color: rgba(51, 51, 51, 0.6);
+	}
+	table tr td:first-child{
+		width: 30%;
+	}
+	.color-box{
+		width: 100%;
+		height: 50px;
+		border-radius: 6px;
+	}
+
+	.color-box b{
+  		color: white;
+  		font-size: 14px;
+  		display: block;
+      padding: 13px;
+  }
+	.primary-color{
+		background-color: #fc6b00;
+	}
+	.secondary-color{
+		background-color: #393e46;
+	}
+	.event-state-open{
+	  background-color: #66bb6a;
+	}
+	.event-state-cancelled{
+	 background-color: #ef5350;
+	 }
+	.event-state-closed{
+	  background-color: #ccc;
+	}
+`}</style>
+
+<h1>Main colors</h1>
+<table>
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Swatches</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><b>theme.color.primary</b></td>
+		<td>
+			<div className={'color-box primary-color'}>
+			  <b>#fc6b00</b>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><b>theme.color.secondary</b></td>
+		<td>
+			<div className={'color-box secondary-color'}>
+			<b>#393e46</b>
+			</div>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<h1>Events status colors</h1>
+<table>
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Swatches</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><b>Open event</b><br/><code>.event-state-open</code></td>
+		<td>
+			<div className={'color-box event-state-open'}>
+			  <b>#66bb6a</b>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Cancelled event</b><br/><code>.event-state-cancelled</code></td>
+		<td>
+			<div className={'color-box event-state-cancelled'}>
+			<b>#393e46</b>
+			</div>
+		</td>
+	</tr>
+	<tr>
+  		<td><b>Closed event</b><br/><code>.event-state-closed</code></td>
+  		<td>
+  			<div className={'color-box event-state-closed'}>
+  			<b>#CCCCCC</b>
+  			</div>
+  		</td>
+  	</tr>
+	</tbody>
+</table>

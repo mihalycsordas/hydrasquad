@@ -26,7 +26,7 @@ const routes: Routes = [
     {
         path: PATHS.contact.main,
         data: {title: 'Kapcsolat'},
-        loadChildren: () => import('./contact-us/contact-us-routing.modulte').then(m => m.ContactUsRoutingModulte)
+        loadChildren: () => import('./contact-us/contact-us-routing.modulte').then(m => m.ContactUsRoutingModule)
     },
     {path: '', redirectTo: PATHS.home.main, pathMatch: 'full'}
 ];

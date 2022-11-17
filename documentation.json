@@ -1,0 +1,3810 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "IncomingEvents",
+            "id": "interface-IncomingEvents-91193484ea7e75ff773361d3e38841dbceea09429476f57db7dffbde07aca96fff4810dd020360359981c0d33b42e49aca83c02ee0e16344fbc61aad77e3316f",
+            "file": "src/app/events/models/events.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IncomingEvents {\n    id: string,\n    name: string,\n    location: string,\n    eventTime: string,\n    caption: string,\n    media_url: string,\n    eventLink: string,\n}\n",
+            "properties": [
+                {
+                    "name": "caption",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "eventLink",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "eventTime",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "location",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "media_url",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "NavigationItem",
+            "id": "interface-NavigationItem-5239946808d69710d3d1d7bcae9d5c12bc3b1ab2a4635e36b9d7b0c658f30de34ad2d2c54d1e7ba83a32cb3aaeddeb121c4fa3b297cabaaa08a38f6b7c8b46d5",
+            "file": "src/app/header/models/navigation-item.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface NavigationItem {\n    itemLabel: string,\n    itemLink: string,\n}\n",
+            "properties": [
+                {
+                    "name": "itemLabel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "itemLink",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [
+        {
+            "name": "FormattedTranslateDirective",
+            "id": "directive-FormattedTranslateDirective-9531cda77767873247072b7ec638cb0cc80d8d9f5093038fe7e75893fb5ce19b88c780d6b643c47b79bbb52a918cc6bf87098a32158dfc52570df98517e550bc",
+            "file": "src/app/services/i18n/formatted-translate.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import {Directive, HostBinding, Input, OnChanges, SimpleChanges} from '@angular/core';\nimport {TranslateService} from '@ngx-translate/core';\nimport {DomSanitizer, SafeHtml} from '@angular/platform-browser';\n\n@Directive({\n    selector: '[appFormattedTranslate]',\n})\nexport class FormattedTranslateDirective implements OnChanges {\n    @Input('appFormattedTranslate') key: string;\n    @HostBinding() innerHTML: SafeHtml;\n\n    constructor(\n        private domSanitizer: DomSanitizer,\n        private translateService: TranslateService\n    ) {\n    }\n\n    ngOnChanges(changes: SimpleChanges): void {\n        if (changes.key && changes.key.currentValue) {\n            this.translate();\n        }\n    }\n\n    private translate(): void {\n        this.translateService.get(this.key).subscribe((translatedText: string) => {\n            this.innerHTML = this.domSanitizer.bypassSecurityTrustHtml(translatedText);\n        });\n    }\n}\n",
+            "selector": "[appFormattedTranslate]",
+            "providers": [],
+            "inputsClass": [
+                {
+                    "name": "appFormattedTranslate",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [
+                {
+                    "name": "innerHTML",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "SafeHtml",
+                    "decorators": []
+                }
+            ],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "innerHTML",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SafeHtml",
+                    "optional": false,
+                    "description": "",
+                    "line": 10,
+                    "decorators": [
+                        {
+                            "name": "HostBinding",
+                            "stringifiedArguments": ""
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "translate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "implements": [
+                "OnChanges"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "domSanitizer",
+                        "type": "DomSanitizer",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "translateService",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "domSanitizer",
+                        "type": "DomSanitizer",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "translateService",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "components": [
+        {
+            "name": "AboutUsComponent",
+            "id": "component-AboutUsComponent-85cc0ec62c00dff418fd027f2213b279938e6c4245f4951bbc89992ffe61920536026412ce2255bdce587c8c847bea796e9dbd01a88c0cbd664dbb54d83e8884",
+            "file": "src/app/about-us/about-us.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-about-us",
+            "styleUrls": [
+                "./about-us.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./about-us.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\n\n@Component({\n    selector: 'app-about-us',\n    templateUrl: './about-us.component.html',\n    styleUrls: ['./about-us.component.scss']\n})\nexport class AboutUsComponent {\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".about-us {\n    display: inline-block;\n\n    div {\n        margin: 30px 0;\n        padding: 0 15px;\n        float: left;\n\n        picture {\n            img {\n                width: 100%;\n            }\n        }\n    }\n\n    p {\n        text-align: justify;\n    }\n}\n\n",
+                    "styleUrl": "./about-us.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-title titleText=\"Rólunk\"\n                   titleDescription=\"Valami rólunk\"></app-title>\n<div class=\"about-us\">\n    <div class=\"col-lg-6 col-md-6\">\n        <picture>\n            <img src=\"assets/img/hydra_group_image.jpeg\" loading=\"lazy\">\n        </picture>\n    </div>\n    <div class=\"col-lg-6 col-md-6\">\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English. Many desktop\n            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for\n            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the\n            years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English.</p>\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English. Many desktop\n            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for\n            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the\n            years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>\n    </div>\n</div>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-f38164d928a5623a3b659a2ec9c4f3a5f08033357e60c84ab4dbf44950b99289bee115f1eee9c9800bfd3bdb3c01ca02cc6d80cb2cac84d96bfe077529679994",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "lesson$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, OnInit} from '@angular/core';\nimport {TranslateService} from '@ngx-translate/core';\nimport { AppLanguage } from './language/app-language';\nimport {Observable} from 'rxjs';\n\n@Component({\n    selector: 'app-root',\n    templateUrl: './app.component.html',\n    styleUrls: ['./app.component.scss']\n})\nexport class AppComponent implements OnInit{\n    lesson$: Observable<any>;\n\n    constructor(\n        private translate: TranslateService)\n    {\n        translate.addLangs(Object.values(AppLanguage));\n        translate.setDefaultLang(AppLanguage.HU);\n        translate.use(AppLanguage.HU);\n    }\n\n    ngOnInit() {\n        this.translate.setDefaultLang(AppLanguage.HU);\n    }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "translate",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "translate",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<router-outlet></router-outlet>\n<app-footer></app-footer>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-810590b230f307d2d8816541cfea8d8f84b0c11189c830aa0631e2d66b7555730dfddfe5b62dbc518f45a05eb5590e924332e2015b63c7d32a900a550ee7644e",
+            "file": "src/stories/atoms/buttons/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 619,
+                            "end": 634,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 620,
+                                "end": 628,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 33,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 25,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 39,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n    selector: 'storybook-button',\n    templateUrl: './button.component.html',\n    styleUrls: ['./button.component.scss'],\n})\nexport default class ButtonComponent {\n    /**\n     * Is this the principal call to action on the page?\n     */\n    @Input()\n    primary = false;\n\n    /**\n     * What background color to use\n     */\n    @Input()\n    backgroundColor?: string;\n\n    /**\n     * How large should the button be?\n     */\n    @Input()\n    size: 'small' | 'medium' | 'large' = 'medium';\n\n    /**\n     * Button contents\n     *\n     * @required\n     */\n    @Input()\n    label = 'Button';\n\n    /**\n     * Optional click handler\n     */\n    @Output()\n    onClick = new EventEmitter<Event>();\n\n    public get classes(): string[] {\n        const mode = this.primary\n            ? 'storybook-button--primary'\n            : 'storybook-button--secondary';\n\n        return ['storybook-button', `storybook-button--${this.size}`, mode];\n    }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n    font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    border: 0;\n    border-radius: 3em;\n    cursor: pointer;\n    display: inline-block;\n    line-height: 1;\n}\n.storybook-button--primary {\n    color: white;\n    background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n    color: #333;\n    background-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n    font-size: 12px;\n    padding: 10px 16px;\n}\n.storybook-button--medium {\n    font-size: 14px;\n    padding: 11px 20px;\n}\n.storybook-button--large {\n    font-size: 16px;\n    padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 41
+                    }
+                }
+            },
+            "templateData": "<button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n    {{ label }}\n</button>\n"
+        },
+        {
+            "name": "ContactUsComponent",
+            "id": "component-ContactUsComponent-047523e6a94cab07c6c006e4a7afc819c95f1da203dbd92b347077e782a6d5569546a3349c07de2857059eab1dd34294d59b348870bc0760d6ed70b553628a39",
+            "file": "src/app/contact-us/contact-us.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-contact-us",
+            "styleUrls": [
+                "./contact-us.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./contact-us.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, OnInit} from '@angular/core';\n\n@Component({\n    selector: 'app-contact-us',\n    templateUrl: './contact-us.component.html',\n    styleUrls: ['./contact-us.component.scss']\n})\nexport class ContactUsComponent implements OnInit {\n\n    constructor() {\n    }\n\n    ngOnInit(): void {\n    }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./contact-us.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-title titleText=\"Kapcsolat\"\n                   titleDescription=\"Vedd fel velünk a kapcsolatot\"></app-title>\n<div class=\"col-lg-12 col-md-12\">\n    <p>contact-us works!</p>\n</div>\n"
+        },
+        {
+            "name": "EventsComponent",
+            "id": "component-EventsComponent-05481efd019b55c937b0c8712fd012d307dc277e7e7643fb4c55e1e805427c53d8be5009fce66751add20919e89ae55881bfaa318688e296d35764cab90bdafb",
+            "file": "src/app/events/events.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-events",
+            "styleUrls": [
+                "./events.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./events.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "incomingEvents",
+                    "defaultValue": "[\n        {\n            id: '1',\n            name: 'Terminator Salvation',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2022 Március 26-27.',\n            caption: 'Terminator Salvation',\n            media_url: '../assets/img/events/terminator_savation_event.jpeg',\n            eventLink: 'https://www.facebook.com/events/597004918070612?ref=newsfeed',\n        },\n        {\n            id: '2',\n            name: 'ORW - Lone Survivor',\n            location: 'Bogács',\n            eventTime: '2022 Május 7-8',\n            caption: 'ORW 2022 MilSim',\n            media_url: '../assets/img/events/ORW.png',\n            eventLink: '',\n        },\n        {\n            id: '3',\n            name: 'A leghosszabb nap 2.',\n            location: 'Tázlár-Dél-Alföld',\n            eventTime: '2022 Június 24-26',\n            caption: 'A leghosszabb nap 2.',\n            media_url: '../assets/img/events/leghosszabb_nap.jpeg',\n            eventLink: 'https://www.easybaseairsoft.hu/3day/',\n        },\n        {\n            id: '4',\n            name: '3day V. BIST HAZARI',\n            location: 'Molnaszecsőd',\n            eventTime: '2022 Július 13-17',\n            caption: 'ORW 2022 MilSim',\n            media_url: '../assets/img/events/3day_mosahi.png',\n            eventLink: 'https://www.easybaseairsoft.hu/3day/',\n        },\n        {\n            id: '5',\n            name: '10. ZONA Maraton',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2020 Július 8-17',\n            caption: '10. ZONA Maraton',\n            media_url: '../assets/img/events/zona-maraton.png',\n            eventLink: 'https://ease.hu/stalker/',\n        },\n        {\n            id: '6',\n            name: 'Border War 14',\n            location: 'Béla Pod Bezdezem, Csehország',\n            eventTime: '2022 Augusztus 26-28',\n            caption: 'Border War 14',\n            media_url: '../assets/img/events/border-war_14.png',\n            eventLink: 'https://www.borderwar.cz/sites/',\n        },\n        {\n            id: '7',\n            name: '13 Hours',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2022 Szeptember 3-4',\n            caption: '13 Hours',\n            media_url: '../assets/img/events/13-hours.png',\n            eventLink: '',\n        },\n        {\n            id: '8',\n            name: 'Operation Thunder 2',\n            location: 'Ópusztaszer',\n            eventTime: '2022 Szeptember',\n            caption: 'Operation Thunder 2',\n            media_url: '../assets/img/events/operation-thunder.png',\n            eventLink: '',\n        }\n    ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<IncomingEvents>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {IncomingEvents} from \"@app/events/models/events.interface\";\n\n@Component({\n    selector: 'app-events',\n    templateUrl: './events.component.html',\n    styleUrls: ['./events.component.scss']\n})\nexport class EventsComponent {\n\n    incomingEvents: Array<IncomingEvents> = [\n        {\n            id: '1',\n            name: 'Terminator Salvation',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2022 Március 26-27.',\n            caption: 'Terminator Salvation',\n            media_url: '../assets/img/events/terminator_savation_event.jpeg',\n            eventLink: 'https://www.facebook.com/events/597004918070612?ref=newsfeed',\n        },\n        {\n            id: '2',\n            name: 'ORW - Lone Survivor',\n            location: 'Bogács',\n            eventTime: '2022 Május 7-8',\n            caption: 'ORW 2022 MilSim',\n            media_url: '../assets/img/events/ORW.png',\n            eventLink: '',\n        },\n        {\n            id: '3',\n            name: 'A leghosszabb nap 2.',\n            location: 'Tázlár-Dél-Alföld',\n            eventTime: '2022 Június 24-26',\n            caption: 'A leghosszabb nap 2.',\n            media_url: '../assets/img/events/leghosszabb_nap.jpeg',\n            eventLink: 'https://www.easybaseairsoft.hu/3day/',\n        },\n        {\n            id: '4',\n            name: '3day V. BIST HAZARI',\n            location: 'Molnaszecsőd',\n            eventTime: '2022 Július 13-17',\n            caption: 'ORW 2022 MilSim',\n            media_url: '../assets/img/events/3day_mosahi.png',\n            eventLink: 'https://www.easybaseairsoft.hu/3day/',\n        },\n        {\n            id: '5',\n            name: '10. ZONA Maraton',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2020 Július 8-17',\n            caption: '10. ZONA Maraton',\n            media_url: '../assets/img/events/zona-maraton.png',\n            eventLink: 'https://ease.hu/stalker/',\n        },\n        {\n            id: '6',\n            name: 'Border War 14',\n            location: 'Béla Pod Bezdezem, Csehország',\n            eventTime: '2022 Augusztus 26-28',\n            caption: 'Border War 14',\n            media_url: '../assets/img/events/border-war_14.png',\n            eventLink: 'https://www.borderwar.cz/sites/',\n        },\n        {\n            id: '7',\n            name: '13 Hours',\n            location: 'Hatvan-Nagygombos',\n            eventTime: '2022 Szeptember 3-4',\n            caption: '13 Hours',\n            media_url: '../assets/img/events/13-hours.png',\n            eventLink: '',\n        },\n        {\n            id: '8',\n            name: 'Operation Thunder 2',\n            location: 'Ópusztaszer',\n            eventTime: '2022 Szeptember',\n            caption: 'Operation Thunder 2',\n            media_url: '../assets/img/events/operation-thunder.png',\n            eventLink: '',\n        }\n    ];\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "\n.events {\n    width: 100%;\n    display: inline-block;\n    margin: 30px 0;\n\n    ul {\n        padding: 0;\n        margin: 0;\n\n        li {\n            float: left;\n            padding: 0 15px;\n            list-style-type: none;\n            margin-bottom: 30px;\n\n            h2 {\n                font-family: \"Anton\", sans-serif;\n            }\n\n            .event-details-wrapper {\n                p {\n                    margin-bottom: 0;\n\n                    b {\n                        font-weight: bold;\n                    }\n\n                    a {\n                        color: #ef4a4a;\n                    }\n                }\n            }\n\n            figure {\n                img {\n                    height: 294px;\n                    width: 100%;\n                    object-fit: cover;\n                    filter: grayscale(1);\n                    transition: transform .4s;\n\n                    &:hover {\n                        filter: grayscale(0);\n                        transform: scale(1.05);\n                        box-shadow: 0 10px 30px rgba(0, 0, 0, .3);\n                    }\n                }\n            }\n        }\n    }\n}\n",
+                    "styleUrl": "./events.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-title titleText=\"Események\"\n                   titleDescription=\"\"></app-title>\n<div class=\"events\">\n    <ul>\n        <ng-container *ngFor=\"let eventImage of incomingEvents, let i=index\">\n            <li class=\"col-lg-3 col-md-4 col-sm-6 col-12\">\n                <figure>\n                    <img [src]=\"eventImage.media_url\" [alt]=\"eventImage.caption\" loading=\"lazy\">\n                </figure>\n                <h2>{{ eventImage.name }}</h2>\n                <div class=\"event-details-wrapper\">\n                    <p>Helyzsin: <b>{{ eventImage.location }}</b></p>\n                    <p>Időpont: <b>{{ eventImage.eventTime }}</b></p>\n                    <p>Bővebben: <a href=\"{{ eventImage.eventLink }}\" target=\"_blank\">Link</a></p>\n                </div>\n            </li>\n        </ng-container>\n    </ul>\n</div>\n"
+        },
+        {
+            "name": "FooterComponent",
+            "id": "component-FooterComponent-935b227cf6514c58b325391b9f2a4fa417ed3e7bbe19999f99508410b4ada62e6e030cb4a7c4333cddb6a828c7e6aed458100da857d968559f508bde756a510b",
+            "file": "src/app/footer/footer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-footer",
+            "styleUrls": [
+                "./footer.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./footer.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, OnInit} from '@angular/core';\n\n@Component({\n    selector: 'app-footer',\n    templateUrl: './footer.component.html',\n    styleUrls: ['./footer.component.scss']\n})\nexport class FooterComponent implements OnInit {\n\n    constructor() {\n    }\n\n    ngOnInit(): void {\n    }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "footer {\n    position: relative;\n    color: rgba(255, 255, 255, .1);\n    text-transform: uppercase;\n    padding: 30px 0 30px 15px;\n\n    p {\n        margin-bottom: 0;\n    }\n}\n",
+                    "styleUrl": "./footer.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<footer>\n    <p>© Hydra Airsoft Squad</p>\n</footer>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-85ac53f6ead106e9a9b56ef990d6086c3f34eadb2f83ab8431aef4794f6bf520cfc94c543666e4324ed581c3df1a189c9387415ab0785fc003ed0c1aba23203c",
+            "file": "src/app/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-header",
+            "styleUrls": [
+                "./header.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "listItems",
+                    "defaultValue": "[\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<NavigationItem>",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {PATHS} from '../app-paths';\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'app-header',\n    templateUrl: './header.component.html',\n    styleUrls: ['./header.component.scss']\n})\nexport class HeaderComponent {\n\n    listItems: Array<NavigationItem> = [\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ];\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "header {\n    background-color: #ef4a4a;\n\n    &:before {\n        content: \"\";\n        height: 150px;\n        width: 100%;\n        position: absolute;\n        background-size: cover !important;\n        background: url(\"../../assets/img/header_bg2.png\") no-repeat center center;\n    }\n\n    .container {\n        position: relative;\n        background: url(\"../../assets/img/header_effect.svg\") no-repeat center 140px;\n\n        &:before, &:after {\n            top: 0;\n            content: \"\";\n            width: 1px;\n            height: 150px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        &:before {\n            left: 0;\n        }\n\n        &:after {\n            right: 0;\n        }\n    }\n\n    nav {\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        &:before {\n            left: -10px;\n            top: 75px;\n            content: \"\";\n            width: 20px;\n            height: 1px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        ul {\n            padding: 0;\n            margin: 0 0 0 10px;\n\n            li {\n                float: left;\n                list-style-type: none;\n                margin: 0 20px;\n\n                &:first-of-type {\n                    margin-left: 0;\n                }\n\n                &:last-of-type {\n                    margin-right: 0;\n                }\n\n                a {\n                    color: #222;\n                    cursor: pointer;\n                    font-size: 14px;\n                    font-weight: bold;\n                    text-decoration: none;\n\n                    &:hover {\n                        padding-bottom: 5px;\n                        border-bottom: 2px solid;\n                    }\n                }\n            }\n        }\n    }\n\n    #header-brand {\n        text-align: center;\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        a {\n            pointer-events: none;\n        }\n\n        &:before, &:after {\n            left: 0;\n            right: 0;\n            margin: 0 auto;\n            width: 1px;\n            content: \"\";\n            height: 25px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        &:before {\n            top: 0;\n        }\n\n        &:after {\n            bottom: 0;\n        }\n    }\n\n    #sponsors {\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        &:before {\n            right: -10px;\n            top: 75px;\n            content: \"\";\n            width: 20px;\n            height: 1px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        a {\n            pointer-events: none;\n\n            img {\n                float: right;\n                margin-right: 10px;\n            }\n        }\n    }\n}\n",
+                    "styleUrl": "./header.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg col-md-5\">\n                <nav>\n                    <ul>\n                        <li *ngFor=\"let items of listItems\">\n                            <app-link color=\"primary\" [routerLink]=\"items.itemLink\" [text]=\"items.itemLabel\"></app-link>\n                        </li>\n                    </ul>\n                </nav>\n            </div>\n            <div id=\"header-brand\" class=\"col-lg-2 col-md-2\">\n                <a href=\"\">\n                    <img src=\"assets/img/hydra_logo.svg\">\n                </a>\n            </div>\n            <div id=\"sponsors\" class=\"col-lg-5 col-md-5\">\n                <a href=\"https://www.anareus.cz/\" target=\"_blank\">\n                    <img src=\"assets/img/sponzored_by_anareus.svg\">\n                </a>\n            </div>\n        </div>\n    </div>\n</header>\n"
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-f39998823699d7962afda37c6db098a37256a9c4edc4a4daa3c4f03888085859f08aacad7439c38847c53a24c6e643fb1598dd282c1906b8bd9147e1a6536823",
+            "file": "src/app/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [
+                "./home.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "listItems",
+                    "defaultValue": "[\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<NavigationItem>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\nimport {PATHS} from \"@app/app-paths\";\n\n@Component({\n    selector: 'app-home',\n    templateUrl: './home.component.html',\n    styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {\n    listItems: Array<NavigationItem> = [\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".gallery-section {\n    display: inline-block;\n    margin: 30px 0;\n\n    ul {\n        padding: 0;\n        margin: 0;\n\n        li {\n            float: left;\n            padding: 0 15px;\n            list-style-type: none;\n            margin-bottom: 30px;\n\n            img {\n                height: 300px;\n                width: 100%;\n                object-fit: cover;\n                filter: grayscale(1);\n                transition: transform .4s;\n\n                &:hover {\n                    filter: grayscale(0);\n                    transform: scale(1.05);\n                    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);\n                }\n            }\n        }\n    }\n}\n",
+                    "styleUrl": "./home.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-home-page [listItems]=\"listItems\"></app-home-page>\n"
+        },
+        {
+            "name": "LinkButtonComponent",
+            "id": "component-LinkButtonComponent-d15c84239f6fa3e837ecd0eb1743e9bd7ca3163c868bc36357e868d354691a109ca5c63340c9be51f5fd3342a86e9e6d129603be12521cdbffede36536d37021",
+            "file": "src/stories/atoms/buttons/link-button/link-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "link-button",
+            "styleUrls": [
+                "./link-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./link-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "\"primary\" | \"secondary\"",
+                    "decorators": []
+                },
+                {
+                    "name": "href",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "routerLink",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'normal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "\"small\" | \"normal\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "target",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "\"_blank\" | \"_self\" | \"_parent\" | \"_top\" | null",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'Button text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "linkButtonClasses",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<string>",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "generateLinkButtonClasses",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Array<string>",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n    Component,\n    Input,\n    OnChanges,\n    OnInit,\n    SimpleChanges,\n} from '@angular/core';\n\n@Component({\n    selector: 'link-button',\n    templateUrl: './link-button.component.html',\n    styleUrls: ['./link-button.component.scss'],\n})\nexport class LinkButtonComponent implements OnInit, OnChanges {\n    @Input()\n    href: string | null = null;\n\n    @Input()\n    routerLink: string | null = null;\n\n    @Input()\n    target: '_blank' | '_self' | '_parent' | '_top' | null;\n\n    @Input()\n    size: 'small' | 'normal' | 'large' = 'normal';\n\n    @Input()\n    color: 'primary' | 'secondary' = 'primary';\n\n    @Input()\n    text = 'Button text';\n\n    linkButtonClasses: Array<string>;\n\n    ngOnInit(): void {\n        this.linkButtonClasses = this.generateLinkButtonClasses();\n    }\n\n    ngOnChanges(changes: SimpleChanges): void {\n        if (changes.expand || changes.fill || changes.size || changes.color) {\n            this.linkButtonClasses = this.generateLinkButtonClasses();\n        }\n    }\n\n    public generateLinkButtonClasses(): Array<string> {\n        const mode = 'link-button';\n\n        return [\n            `link-button--${this.color}`,\n            `link-button--${this.size}`,\n            mode,\n        ];\n    }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".link-button {\n    cursor: pointer;\n    font-size: 14px;\n    font-weight: bold;\n    text-decoration: none;\n\n    &:hover {\n        padding-bottom: 5px;\n        border-bottom: 2px solid;\n    }\n\n    &--primary{\n        color: red;\n    }\n\n    &--secondary{\n        color: white;\n    }\n\n    &--small{\n        font-size: 12px;\n    }\n    &--normal{\n        font-size: 16px;\n    }\n    &--large{\n        font-size: 20px;\n    }\n}\n",
+                    "styleUrl": "./link-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit",
+                "OnChanges"
+            ],
+            "templateData": "<a\n    [attr.href]=\"href\"\n    [attr.target]=\"target\"\n    [attr.routerLink]=\"routerLink\"\n    [attr.color]=\"color\"\n    [ngClass]=\"linkButtonClasses\"\n>\n    {{ text }}\n</a>\n"
+        },
+        {
+            "name": "LinkComponent",
+            "id": "component-LinkComponent-b4b3ed8d57732a2435d2438f4d824e4ce8f336c08be929c9b9dac1c86cba8b09239ff054af6b6b568a92efb40f4ff6afd74cdf8e99719dcb5d3bf451b191985d",
+            "file": "src/stories/atoms/links/link/link.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-link",
+            "styleUrls": [
+                "./link.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./link.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "\"primary\" | \"secondary\"",
+                    "decorators": []
+                },
+                {
+                    "name": "decoration",
+                    "defaultValue": "'simple'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "\"simple\" | \"underline\"",
+                    "decorators": []
+                },
+                {
+                    "name": "routerLink",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'normal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "\"small\" | \"normal\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'Link text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "linkClasses",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<string>",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "generateLinkClasses",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Array<string>",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';\n\n@Component({\n  selector: 'app-link',\n  templateUrl: './link.component.html',\n  styleUrls: ['./link.component.scss'],\n})\nexport class LinkComponent implements OnInit, OnChanges {\n  @Input()\n  routerLink: string;\n\n  @Input()\n  decoration: 'simple' | 'underline' = 'simple';\n\n  @Input()\n  size: 'small' | 'normal' | 'large' = 'normal';\n\n  @Input()\n  color: 'primary' | 'secondary' = 'primary';\n\n  @Input()\n  text = 'Link text';\n\n  linkClasses: Array<string>;\n\n  ngOnInit(): void {\n    this.linkClasses = this.generateLinkClasses();\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes.color) {\n      this.linkClasses = this.generateLinkClasses();\n    }\n  }\n\n  public generateLinkClasses(): Array<string> {\n    const mode = 'link';\n\n    return [`link--${this.color}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"src/styles/abstracts/colors\";\n\n.link {\n    &--primary {\n        color: #222;\n        cursor: pointer;\n        font-size: 14px;\n        font-weight: bold;\n        text-decoration: none;\n\n        &:hover {\n            padding-bottom: 5px;\n            border-bottom: 2px solid;\n        }\n    }\n}\n",
+                    "styleUrl": "./link.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit",
+                "OnChanges"
+            ],
+            "templateData": "<a [routerLink]=\"routerLink\"\n   [attr.color]=\"color\"\n   [ngClass]=\"linkClasses\">\n  {{ text }}\n</a>\n"
+        },
+        {
+            "name": "NavigationBarComponent",
+            "id": "component-NavigationBarComponent-c1abe49432b5a778c43cf1f5115670363aee3b9a202980cea6712f5f51eaa42ec3f79f96e381592a3a32fd658e4a35a1d412bb808f5a8e1f4a3f4f3032f0da04",
+            "file": "src/stories/molecules/navigation-bar/navigation-bar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-navigation-bar",
+            "styleUrls": [
+                "./navigation-bar.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./navigation-bar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "listItems",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "Array<NavigationItem>",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'app-navigation-bar',\n    templateUrl: './navigation-bar.component.html',\n    styleUrls: ['./navigation-bar.component.scss'],\n})\n\nexport class NavigationBarComponent {\n    @Input() listItems: Array<NavigationItem>;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "nav{\n    display: flex;\n    height: 150px;\n    justify-content: center;\n    flex-direction: column;\n    ul{\n        gap: 30px;\n        padding: 0;\n        display: flex;\n        margin: 0 0 0 10px;\n        li{\n            list-style-type: none;\n        }\n    }\n}\n",
+                    "styleUrl": "./navigation-bar.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<nav>\n    <ul>\n        <li *ngFor=\"let items of listItems\">\n            <app-link color=\"primary\" [routerLink]=\"items.itemLink\" [text]=\"items.itemLabel\"></app-link>\n        </li>\n    </ul>\n</nav>\n"
+        },
+        {
+            "name": "OrganismsHeaderComponent",
+            "id": "component-OrganismsHeaderComponent-f2900090507261bb9eddea5c627944267b41a63d8a2602fe413c229ae1d75ee0b0354c2205e66b60bfda838f514c5b6c4585ba40b1f6ee60abf10a5e96da032e",
+            "file": "src/stories/organisms/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "listItems",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "Array<NavigationItem>",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from '@angular/core';\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'storybook-header',\n    templateUrl: './header.component.html',\n    styleUrls: ['./header.component.scss'],\n})\nexport default class OrganismsHeaderComponent {\n    @Input() listItems: Array<NavigationItem>;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "header {\n    background-color: #ef4a4a;\n\n    &:before {\n        content: \"\";\n        height: 150px;\n        width: 100%;\n        position: absolute;\n        background-size: cover !important;\n        background: url(\"../../../assets/img/header_bg2.png\") no-repeat center\n            center;\n    }\n\n    .container {\n        position: relative;\n        background: url(\"../../../assets/img/header_effect.svg\") no-repeat center\n            140px;\n\n        &:before,\n        &:after {\n            top: 0;\n            content: \"\";\n            width: 1px;\n            height: 150px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, 0.1);\n        }\n\n        &:before {\n            left: 0;\n        }\n\n        &:after {\n            right: 0;\n        }\n    }\n\n    #header-brand {\n        text-align: center;\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        a {\n            pointer-events: none;\n        }\n\n        &:before, &:after {\n            left: 0;\n            right: 0;\n            margin: 0 auto;\n            width: 1px;\n            content: \"\";\n            height: 25px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        &:before {\n            top: 0;\n        }\n\n        &:after {\n            bottom: 0;\n        }\n    }\n\n    #sponsors {\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        &:before {\n            right: -10px;\n            top: 75px;\n            content: \"\";\n            width: 20px;\n            height: 1px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        a {\n            pointer-events: none;\n\n            img {\n                float: right;\n                margin-right: 10px;\n            }\n        }\n    }\n}\n",
+                    "styleUrl": "./header.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg col-md-5\">\n                <app-navigation-bar [listItems]=\"listItems\"></app-navigation-bar>\n            </div>\n            <div id=\"header-brand\" class=\"col-lg-2 col-md-2\">\n                <a href=\"\">\n                    <img src=\"assets/img/hydra_logo.svg\">\n                </a>\n            </div>\n            <div id=\"sponsors\" class=\"col-lg-5 col-md-5\">\n                <a href=\"https://www.anareus.cz/\" target=\"_blank\">\n                    <img src=\"assets/img/sponzored_by_anareus.svg\">\n                </a>\n            </div>\n        </div>\n    </div>\n</header>\n"
+        },
+        {
+            "name": "PartnersComponent",
+            "id": "component-PartnersComponent-3b921c22b415525c215f5ca27dffabc0c54518c417fb3121c3a13d16035fc720eeeaaff1266807a72c249e45aabe21aca1b65a9c1c33f24e9ffc3adc724c0490",
+            "file": "src/app/partners/partners.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-partners",
+            "styleUrls": [
+                "./partners.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./partners.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {Title} from '@angular/platform-browser';\n\n@Component({\n    selector: 'app-partners',\n    templateUrl: './partners.component.html',\n    styleUrls: ['./partners.component.scss']\n})\nexport class PartnersComponent {\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".partners {\n    display: inline-block;\n\n    div {\n        margin: 30px 0;\n        padding: 0 15px;\n        float: left;\n\n        picture {\n            img {\n                width: 100%;\n            }\n        }\n    }\n\n    h2 {\n        font-size: 32px;\n        margin-bottom: 0;\n    }\n\n    a {\n        color: #ef4a4a;\n        margin-bottom: 20px;\n        display: block;\n    }\n\n    p {\n        text-align: justify;\n    }\n}\n\n",
+                    "styleUrl": "./partners.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-title titleText=\"Partnereink\"\n                   titleDescription=\"Légy te is partnerünk\"></app-title>\n<div class=\"partners\">\n    <div class=\"col-lg-6 col-md-6\">\n        <picture>\n            <img src=\"assets/img/hydra_group_image.jpeg\" loading=\"lazy\">\n        </picture>\n    </div>\n    <div class=\"col-lg-6 col-md-6\">\n        <h2>Anareus CZ</h2>\n        <a href=\"https://www.anareus.cz/\" target=\"_blank\">www.anareus.cz</a>\n        <p>The Anareus CZ, s.r.o. company is focused on the trade with airsoft weapons, airsoft parts, outdoor &\n            military clothes, gear and boots since year 2001, when we've became the first specialized brick-and-mortar\n            (physical) shop in Czech Republic. Our Showroom is the biggiest in the Czech Republic in this time.</p>\n        <p>We are the direct importers and representatives for many worldknown brand & manufacturers. Primary we import\n            the goods from Japan, Hong Kong, Taiwan, China and from USA, Canada as well.</p>\n    </div>\n</div>\n"
+        },
+        {
+            "name": "TemplateHomePageComponent",
+            "id": "component-TemplateHomePageComponent-4646866f408b67635666eaa10b01d143c19a4a0a7983dc2f8a5c63a9b2fc8dca66ca2fd599509e365e5cab2ef630d8529ffdd9043e5a7fd0b04be273c0b89fec",
+            "file": "src/stories/templates/home-page/home-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home-page",
+            "styleUrls": [
+                "./home-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "listItems",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "Array<NavigationItem>",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'app-home-page',\n    templateUrl: './home-page.component.html',\n    styleUrls: ['./home-page.component.scss'],\n})\nexport default class TemplateHomePageComponent {\n    @Input() listItems: Array<NavigationItem>;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./home-page.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<storybook-header [listItems]=\"listItems\"></storybook-header>\n<app-title titleText=\"Homepage\" titleDescription=\"This is the home page\"></app-title>\n"
+        },
+        {
+            "name": "TitleComponent",
+            "id": "component-TitleComponent-69e92a6394498d505ebf95f42d4f3d3880c89154e8c7cd73e1c2430a342e3b92aaa348ca06d7c8900f7cee5d23b3ca77d7044fee0d345c9be40b026b5a201cd6",
+            "file": "src/stories/atoms/title/title.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-title",
+            "styleUrls": [
+                "./title.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./title.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "titleDescription",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "titleText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-title',\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n})\nexport class TitleComponent {\n    @Input()\n    titleText: string;\n\n    @Input()\n    titleDescription: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".title-section {\n    height: 150px;\n    position: relative;\n    text-align: center;\n    flex-direction: column;\n    justify-content: center;\n    text-transform: initial;\n    display: flex;\n\n    h1 {\n        color: white;\n        font-size: 57px;\n        font-weight: bold;\n        font-family: \"Anton\", sans-serif;\n        text-transform: uppercase;\n        line-height: 64px;\n        margin-bottom: 5px;\n        letter-spacing: 3px;\n    }\n\n    p {\n        color: white;\n        margin: 0;\n    }\n\n    &:before {\n        content: \"47.4979° N, 19.0402° E\";\n        position: absolute;\n        left: -90px;\n        color: rgba(255, 255, 255, 0.1);\n        transform: rotate(-90deg);\n        font-size: 11px;\n    }\n\n    &:after {\n        left: -21px;\n        top: 75px;\n        content: \"\";\n        width: 20px;\n        height: 1px;\n        position: absolute;\n        background-color: rgba(255, 255, 255, .1);\n    }\n}\n",
+                    "styleUrl": "./title.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"title-section\">\n    <div class=\"col-lg-12 col-md-12\">\n        <h1>{{ titleText }}</h1>\n        <p>{{ titleDescription }}</p>\n    </div>\n</div>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AboutUsModule",
+            "id": "module-AboutUsModule-fdd990d29b2313bd1e2ae8aa2c00e3977cf7c51128484591b45f03bb06eb5221a4c9c84f57100cac363fe9146bbc75bbff87c96b64eb5ee5580f97b5b215f462",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/about-us/about-us.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {AboutUsComponent} from './about-us.component';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {AboutUsRoutingModule} from \"@app/about-us/about-us-routing.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        AtomsModule,\n        AboutUsRoutingModule\n    ],\n    exports: [\n        AboutUsComponent\n    ],\n    declarations: [AboutUsComponent]\n})\n\nexport class AboutUsModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AboutUsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AboutUsRoutingModule"
+                        },
+                        {
+                            "name": "AtomsModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "AboutUsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AboutUsRoutingModule",
+            "id": "module-AboutUsRoutingModule-c183235cac82ecf0d6626b023ce85ef170c4139f334859efd1d3d481b8dff43cf2030b3fb03d3e0c7e29b6839aeb96cf14d8ae4d5f52f1cf386f028c4c4fbc66",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/about-us/about-us-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {NgModule} from '@angular/core';\nimport {AboutUsComponent} from './about-us.component';\n\nconst routes: Routes = [\n    {\n        path: '',\n        component: AboutUsComponent\n    }\n];\n\n@NgModule({\n    imports: [\n        RouterModule.forChild(routes),\n    ],\n    exports: [RouterModule]\n})\nexport class AboutUsRoutingModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-3ff99e593cc3bbe752e831e0df1efa9bbe2113403255e318c73ef0bdbb4697797c7cc3f34ee2dbaaf15c79177ead3d6b83e1555ae0747163bc8fa48d3cbb651b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {BrowserModule} from '@angular/platform-browser';\n\nimport {AppComponent} from './app.component';\nimport {BrowserAnimationsModule} from '@angular/platform-browser/animations';\nimport {HeaderModule} from './header/header.module';\nimport {AppRoutingModule} from './app-routing.module';\nimport {HttpClient, HttpClientModule} from '@angular/common/http';\nimport {FooterModule} from './footer/footer.module';\nimport {TranslateLoader, TranslateModule} from '@ngx-translate/core';\nimport {TranslateHttpLoader} from '@ngx-translate/http-loader';\nimport {I18nModule} from './services/i18n/i18n.module';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {AboutUsModule} from \"@app/about-us/about-us.module\";\nimport {HomeModule} from \"@app/home/home.module\";\nimport {ContactUsModule} from \"@app/contact-us/contact-us.module\";\nimport {EventsModule} from \"@app/events/events.module\";\nimport {TemplatesModule} from \"../stories/templates/templates.module\";\n\nexport function HttpLoaderFactory(http: HttpClient) {\n    return new TranslateHttpLoader(http);\n}\n\n@NgModule({\n    declarations: [\n        AppComponent\n    ],\n    imports: [\n        BrowserModule.withServerTransition({ appId: 'hydrasquad' }),\n        BrowserAnimationsModule,\n        HttpClientModule,\n\n        TranslateModule.forRoot({\n            loader: {\n                provide: TranslateLoader,\n                useFactory: HttpLoaderFactory,\n                deps: [HttpClient]\n            }\n        }),\n\n        I18nModule,\n        HeaderModule,\n        FooterModule,\n        AppRoutingModule,\n        AboutUsModule,\n        HomeModule,\n        ContactUsModule,\n        EventsModule,\n\n        TemplatesModule\n    ],\n    providers: [\n    ],\n    bootstrap: [AppComponent]\n})\nexport class AppModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AboutUsModule"
+                        },
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "ContactUsModule"
+                        },
+                        {
+                            "name": "EventsModule"
+                        },
+                        {
+                            "name": "FooterModule"
+                        },
+                        {
+                            "name": "HeaderModule"
+                        },
+                        {
+                            "name": "HomeModule"
+                        },
+                        {
+                            "name": "I18nModule"
+                        },
+                        {
+                            "name": "TemplatesModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-cc01471751429b104acdd5f56687e3bac70b7fab6cbdfdc108c8919f2efa869d22097aac29058fbef1b3918c4be85133c2794be3545d1cafeca06457adbda94b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {NgModule} from '@angular/core';\nimport {PATHS} from './app-paths';\n\nconst routes: Routes = [\n    {\n        path: PATHS.home.main,\n        data: {title: 'Home'},\n        loadChildren: () => \"import('./home/home-routing.module').then(m => m.HomeRoutingModule)\"\n    },\n    {\n        path: PATHS.about_us.main,\n        data: {title: 'Rólunk'},\n        loadChildren: () => \"import('./about-us/about-us-routing.module').then(m => m.AboutUsRoutingModule)\"\n    },\n    {\n        path: PATHS.partners.main,\n        data: {title: 'Partnerek'},\n        loadChildren: () => \"import('./partners/partners-routing.module').then(m => m.PartnersRoutingModule)\"\n    },\n    {\n        path: PATHS.events.main,\n        data: {title: 'Események'},\n        loadChildren: () => \"import('./events/events-routing.module').then(m => m.EventsRoutingModule)\"\n    },\n    {\n        path: PATHS.contact.main,\n        data: {title: 'Kapcsolat'},\n        loadChildren: () => \"import('./contact-us/contact-us-routing.modulte').then(m => m.ContactUsRoutingModule)\"\n    },\n    {path: '', redirectTo: PATHS.home.main, pathMatch: 'full'}\n];\n\n@NgModule({\n    imports: [RouterModule.forRoot(routes)],\n    exports: [RouterModule]\n})\nexport class AppRoutingModule {\n\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppServerModule",
+            "id": "module-AppServerModule-c0b623aa23212685f99c11787b45e64e0f43843eecea5807a32ece38aa778f6b90507d01270a6cbca3796c0517ec5516f16c08aeb9dc67b304957184602f3d56",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.server.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { ServerModule } from '@angular/platform-server';\n\nimport { AppModule } from './app.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n    imports: [\n        AppModule,\n        ServerModule,\n    ],\n    bootstrap: [AppComponent],\n})\nexport class AppServerModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AtomsModule",
+            "id": "module-AtomsModule-b3d361d330c72c7ba9b6839d77a4bd3868a420853791cd40372dc2c6048911098d6c47e02b501ac3f2e0d553a0d2ad7c822b163371376c1d4498ec28f893d4b4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/stories/atoms/atoms.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport ButtonComponent from \"@atoms/buttons/button/button.component\";\nimport {LinkButtonComponent} from \"@atoms/buttons/link-button/link-button.component\";\nimport {LinkComponent} from \"@atoms/links/link/link.component\";\nimport {TitleComponent} from \"@atoms/title/title.component\";\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];\n\nconst COMPONENTS = [\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n];\n\n@NgModule({\n    imports: [...IMPORTS_EXPORTS],\n    declarations: [...COMPONENTS],\n    exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n    schemas: [NO_ERRORS_SCHEMA],\n})\nexport class AtomsModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ContactUsModule",
+            "id": "module-ContactUsModule-2f429be27c7c4081627a8441cfb5610e11b05e62f6dd469561a8cccc6e87186204b00d7fa543cbc6b680acf5e6a5671be3a9eb6c3fb000a3dd8d085e231a02bc",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/contact-us/contact-us.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {ContactUsComponent} from './contact-us.component';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {ContactUsRoutingModule} from \"@app/contact-us/contact-us-routing.modulte\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        AtomsModule,\n        ContactUsRoutingModule\n    ],\n    exports: [\n        ContactUsComponent\n    ],\n    declarations: [ContactUsComponent]\n})\n\nexport class ContactUsModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ContactUsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AtomsModule"
+                        },
+                        {
+                            "name": "ContactUsRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ContactUsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ContactUsRoutingModule",
+            "id": "module-ContactUsRoutingModule-29eab0d363e6d47624db36c28d80e7c7dfd87a49362dc5695b2ef4cd6f3249ce93f6f235b67abd78c8aa0f5a17b003d2be22304ea57a3f92221e3c79e26b23bd",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/contact-us/contact-us-routing.modulte.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {NgModule} from '@angular/core';\nimport {ContactUsComponent} from './contact-us.component';\n\nconst routes: Routes = [\n    {\n        path: '',\n        component: ContactUsComponent\n    }\n];\n\n@NgModule({\n    imports: [\n        RouterModule.forChild(routes),\n    ],\n    exports: [RouterModule]\n})\nexport class ContactUsRoutingModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "EventsModule",
+            "id": "module-EventsModule-1a78a71f9d137863fed29cadd13743aefe58e16b13414b537fa890fbcbe5958f5860e084f700a7ddb1ead134a28719994191355d32ac04202efda0bf372a5573",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/events/events.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {EventsComponent} from './events.component';\nimport {RouterModule} from '@angular/router';\nimport {I18nModule} from '../services/i18n/i18n.module';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {EventsRoutingModule} from \"@app/events/events-routing.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        RouterModule,\n        AtomsModule,\n        EventsRoutingModule,\n        I18nModule,\n    ],\n    exports: [\n        EventsComponent\n    ],\n    declarations: [EventsComponent]\n})\n\nexport class EventsModule {\n\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "EventsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AtomsModule"
+                        },
+                        {
+                            "name": "EventsRoutingModule"
+                        },
+                        {
+                            "name": "I18nModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "EventsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "EventsRoutingModule",
+            "id": "module-EventsRoutingModule-3267d3e30fad547cb49f8aa440d0642a1e047b18e0827e8fc9dfb7f36131d651a51874370088865e9df1880538f6dd48f677ed18241a5abfddf8d6027c69e17e",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/events/events-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {NgModule} from '@angular/core';\nimport {EventsComponent} from './events.component';\nimport {EventsModule} from './events.module';\n\nconst routes: Routes = [\n    {\n        path: '',\n        component: EventsComponent\n    }\n];\n\n@NgModule({\n    imports: [\n        RouterModule.forChild(routes),\n    ],\n    exports: [RouterModule]\n})\nexport class EventsRoutingModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "FooterModule",
+            "id": "module-FooterModule-2c50cacd6eb80fc02106528d97e31e7542e7056b786c1f17c8fd8bcb6d2337f7251f95a6a992da7650ca5379ae448e3340ada277a7dc96d697f036d12484ffa7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/footer/footer.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {FooterComponent} from './footer.component';\n\n@NgModule({\n    imports: [\n        CommonModule\n    ],\n    exports: [\n        FooterComponent\n    ],\n    declarations: [FooterComponent]\n})\n\nexport class FooterModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "FooterComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "FooterComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HeaderModule",
+            "id": "module-HeaderModule-079da4b4ec84bde4498f0c8a88717199d007d878dc4798df209ba159838a126ec8705c6fee775cc2be386ed706aa80dcadf111201c4eb934d6c45841d8f82661",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/header/header.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {BrowserModule} from '@angular/platform-browser';\nimport {CommonModule} from '@angular/common';\nimport {RouterModule} from '@angular/router';\nimport {HeaderComponent} from './header.component';\nimport {MatGridListModule} from '@angular/material/grid-list';\nimport {I18nModule} from '../services/i18n/i18n.module';\nimport {TemplatesModule} from \"../../stories/templates/templates.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        BrowserModule,\n        RouterModule,\n        MatGridListModule,\n        I18nModule,\n        TemplatesModule\n    ],\n    exports: [\n        HeaderComponent,\n    ],\n    declarations: [HeaderComponent]\n})\n\nexport class HeaderModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "HeaderComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "I18nModule"
+                        },
+                        {
+                            "name": "TemplatesModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "HeaderComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HomeModule",
+            "id": "module-HomeModule-2699e6b1ed2ed44436a0fd2d4b2d9122812dd0996544c4ca71c43027ab54ab4e5656bdea94f9c039ce53858fb8ff8ebe7068dd0dee4ae12dff63339b448a2240",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/home/home.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {HomeComponent} from './home.component';\nimport {CommonModule} from '@angular/common';\nimport {TranslateModule} from '@ngx-translate/core';\nimport {HomeRoutingModule} from \"@app/home/home-routing.module\";\nimport {TemplatesModule} from \"../../stories/templates/templates.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        TranslateModule,\n        HomeRoutingModule,\n        TemplatesModule\n    ],\n    exports: [\n        HomeComponent,\n    ],\n    declarations: [HomeComponent]\n})\n\nexport class HomeModule {\n\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "HomeComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "HomeRoutingModule"
+                        },
+                        {
+                            "name": "TemplatesModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "HomeComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HomeRoutingModule",
+            "id": "module-HomeRoutingModule-3067eb5ef30e591e744c9098a30baf528023831df31de0bbdc99b6e70a4d036e461c42fc8f77610e59443c5a1ae27b32e24e4b85e6e09e340d37c9a370c0bc4b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/home/home-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {HomeComponent} from './home.component';\nimport {NgModule} from '@angular/core';\n\nconst routes: Routes = [\n    {\n        path: '',\n        component: HomeComponent\n    }\n];\n\n@NgModule({\n    imports: [\n        RouterModule.forChild(routes),\n    ],\n    exports: [RouterModule]\n})\nexport class HomeRoutingModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "I18nModule",
+            "id": "module-I18nModule-aec3dd57ee9d69cf8d0d9c35232c33215a6e34bdfcd5174218344cb149de54e352ce38c9bbb8ef7fd29ff4b03d10ec9b5eb3328ed12c6adcbead1cb5e6891bdb",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/services/i18n/i18n.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {TranslateModule} from '@ngx-translate/core';\nimport {FormattedTranslateDirective} from './formatted-translate.directive';\n\n@NgModule({\n    imports: [TranslateModule.forChild()],\n    declarations: [FormattedTranslateDirective],\n    exports: [TranslateModule, FormattedTranslateDirective]\n})\nexport class I18nModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "FormattedTranslateDirective"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "FormattedTranslateDirective"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MoleculesModule",
+            "id": "module-MoleculesModule-aece46991b889d75a0e409f1189ca864c37e26a2c7fc4f0bfe23482146bd8272090aa4883ad1f14a42c04ab954ffbb98914271b5a3a725d4db15f4f359f33e71",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/stories/molecules/molecules.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {NavigationBarComponent} from \"@molecules/navigation-bar/navigation-bar.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule, AtomsModule];\n\nconst COMPONENTS = [\n    NavigationBarComponent\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class MoleculesModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "OrganismsModule",
+            "id": "module-OrganismsModule-5804854e78f88d318f4b3ad8d31b31d8b05ebd6a9ce23d61f54d82ddea2f7091ec7f614c26a4c91acf04853f7780e29245fa466bdc7dc2ad7e14c35f80f2ecd4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/stories/organisms/organisms.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {MoleculesModule} from \"@molecules/molecules.module\";\nimport OrganismsHeaderComponent from \"@organisms/header/header.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule, MoleculesModule];\n\nconst COMPONENTS = [\n    OrganismsHeaderComponent\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class OrganismsModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "PartnersModule",
+            "id": "module-PartnersModule-1f5f958c66d27381eed18a3436c958c20bc5dd8514ca6f341b61fe35179e9c8b3897a07e527a2ae1f87fef5b003d878243ec5a594a59d48f34ce4258b47c3563",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/partners/partners.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {PartnersComponent} from './partners.component';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {PartnersRoutingModule} from \"@app/partners/partners-routing.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        AtomsModule,\n        PartnersRoutingModule\n    ],\n    exports: [\n        PartnersComponent\n    ],\n    declarations: [PartnersComponent]\n})\n\nexport class PartnersModule {\n\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "PartnersComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AtomsModule"
+                        },
+                        {
+                            "name": "PartnersRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "PartnersComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "PartnersRoutingModule",
+            "id": "module-PartnersRoutingModule-575402a7f780be01d4e94751f04507f8f4ac05cd24ce87ff956a034b9e3378f08d2507e29abf24fb5488ab3b9459b3f0398a2a6997ce8291221c648933083cda",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/partners/partners-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import {RouterModule, Routes} from '@angular/router';\nimport {NgModule} from '@angular/core';\nimport {PartnersComponent} from './partners.component';\nimport {PartnersModule} from './partners.module';\n\nconst routes: Routes = [\n    {\n        path: '',\n        component: PartnersComponent\n    }\n];\n\n@NgModule({\n    imports: [\n        RouterModule.forChild(routes),\n    ],\n    exports: [RouterModule]\n})\nexport class PartnersRoutingModule {\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TemplatesModule",
+            "id": "module-TemplatesModule-2f3bf9b19875b31545be4f401aae9c9ec283fc95492d348437e43147ae03e5babaa8d465902a915883a311d91e7be78547e785404133084862eb0a62c580cd81",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/stories/templates/templates.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {OrganismsModule} from \"@organisms/organisms.module\";\nimport TemplateHomePageComponent from \"./home-page/home-page.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, OrganismsModule];\n\nconst COMPONENTS = [\n    TemplateHomePageComponent,\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class TemplatesModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "LinkButtonComponent"
+                        },
+                        {
+                            "name": "LinkComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "__non_webpack_require__",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "NodeRequire"
+            },
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/atoms.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n]"
+            },
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/molecules/molecules.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n    NavigationBarComponent\n]"
+            },
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/organisms/organisms.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n    OrganismsHeaderComponent\n]"
+            },
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/templates.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n    TemplateHomePageComponent,\n]"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    production: false\n}"
+            },
+            {
+                "name": "Header",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/organisms/header/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "HomePage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/home-page/home-page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IMPORTS_EXPORTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/atoms.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule]"
+            },
+            {
+                "name": "IMPORTS_EXPORTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/molecules/molecules.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule, AtomsModule]"
+            },
+            {
+                "name": "IMPORTS_EXPORTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/organisms/organisms.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule, MoleculesModule]"
+            },
+            {
+                "name": "IMPORTS_EXPORTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/templates.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[RouterModule, CommonModule, OrganismsModule]"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "mainModule",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "__non_webpack_require__.main"
+            },
+            {
+                "name": "moduleFilename",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "mainModule && mainModule.filename || ''"
+            },
+            {
+                "name": "NavigatinBar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
+                "name": "PATHS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app-paths.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "PathContainer",
+                "defaultValue": "{\n\n    home: {\n        main: 'home',\n    },\n\n    about_us: {\n        main: 'about-us',\n    },\n\n    partners: {\n        main: 'partnerek',\n    },\n\n    events: {\n        main: 'esemenyek',\n    },\n\n    contact: {\n        main: 'kapcsolat',\n    }\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "PrimaryLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
+                "name": "PrimaryLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SecondaryLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TitleComponent>",
+                "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavigationBarComponent>",
+                "defaultValue": "(args: NavigationBarComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LinkButtonComponent>",
+                "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LinkComponent>",
+                "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/organisms/header/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<OrganismsHeaderComponent>",
+                "defaultValue": "(args: OrganismsHeaderComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/home-page/home-page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HomePageComponent>",
+                "defaultValue": "(args: HomePageComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Title",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            }
+        ],
+        "functions": [
+            {
+                "name": "app",
+                "file": "server.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": []
+            },
+            {
+                "name": "HttpLoaderFactory",
+                "file": "src/app/app.module.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "run",
+                "file": "server.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [],
+                "returnType": "void"
+            }
+        ],
+        "typealiases": [
+            {
+                "name": "PathContainer",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "src/app/app-paths.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 181
+            },
+            {
+                "name": "PathDescriptor",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "src/app/app-paths.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 181
+            }
+        ],
+        "enumerations": [
+            {
+                "name": "AppLanguage",
+                "childs": [
+                    {
+                        "name": "EN",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "en"
+                    },
+                    {
+                        "name": "HU",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "hu"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "src/app/language/app-language.ts"
+            }
+        ],
+        "groupedVariables": {
+            "server.ts": [
+                {
+                    "name": "__non_webpack_require__",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "NodeRequire"
+                },
+                {
+                    "name": "mainModule",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "__non_webpack_require__.main"
+                },
+                {
+                    "name": "moduleFilename",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "mainModule && mainModule.filename || ''"
+                }
+            ],
+            "src/stories/atoms/atoms.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/atoms.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n]"
+                },
+                {
+                    "name": "IMPORTS_EXPORTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/atoms.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule]"
+                }
+            ],
+            "src/stories/molecules/molecules.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/molecules.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n    NavigationBarComponent\n]"
+                },
+                {
+                    "name": "IMPORTS_EXPORTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/molecules.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule, AtomsModule]"
+                }
+            ],
+            "src/stories/organisms/organisms.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/organisms/organisms.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n    OrganismsHeaderComponent\n]"
+                },
+                {
+                    "name": "IMPORTS_EXPORTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/organisms/organisms.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[RouterModule, CommonModule, FormsModule, ReactiveFormsModule, MoleculesModule]"
+                }
+            ],
+            "src/stories/templates/templates.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/templates.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n    TemplateHomePageComponent,\n]"
+                },
+                {
+                    "name": "IMPORTS_EXPORTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/templates.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[RouterModule, CommonModule, OrganismsModule]"
+                }
+            ],
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    production: false\n}"
+                }
+            ],
+            "src/stories/organisms/header/Header.stories.ts": [
+                {
+                    "name": "Header",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/organisms/header/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/organisms/header/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<OrganismsHeaderComponent>",
+                    "defaultValue": "(args: OrganismsHeaderComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/templates/home-page/home-page.stories.ts": [
+                {
+                    "name": "HomePage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/home-page/home-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/home-page/home-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<HomePageComponent>",
+                    "defaultValue": "(args: HomePageComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/buttons/button/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/button/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/molecules/navigation-bar/navigation-bar.stories.ts": [
+                {
+                    "name": "NavigatinBar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<NavigationBarComponent>",
+                    "defaultValue": "(args: NavigationBarComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/app/app-paths.ts": [
+                {
+                    "name": "PATHS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app-paths.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PathContainer",
+                    "defaultValue": "{\n\n    home: {\n        main: 'home',\n    },\n\n    about_us: {\n        main: 'about-us',\n    },\n\n    partners: {\n        main: 'partnerek',\n    },\n\n    events: {\n        main: 'esemenyek',\n    },\n\n    contact: {\n        main: 'kapcsolat',\n    }\n}"
+                }
+            ],
+            "src/stories/atoms/buttons/link-button/link-button.stories.ts": [
+                {
+                    "name": "PrimaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "SecondaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LinkButtonComponent>",
+                    "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/links/link/link.stories.ts": [
+                {
+                    "name": "PrimaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LinkComponent>",
+                    "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/title/title.stories.ts": [
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TitleComponent>",
+                    "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Title",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {
+            "server.ts": [
+                {
+                    "name": "app",
+                    "file": "server.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": []
+                },
+                {
+                    "name": "run",
+                    "file": "server.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [],
+                    "returnType": "void"
+                }
+            ],
+            "src/app/app.module.ts": [
+                {
+                    "name": "HttpLoaderFactory",
+                    "file": "src/app/app.module.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "http",
+                            "type": "HttpClient",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "http",
+                            "type": "HttpClient",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupedEnumerations": {
+            "src/app/language/app-language.ts": [
+                {
+                    "name": "AppLanguage",
+                    "childs": [
+                        {
+                            "name": "EN",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "en"
+                        },
+                        {
+                            "name": "HU",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "hu"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "src/app/language/app-language.ts"
+                }
+            ]
+        },
+        "groupedTypeAliases": {
+            "src/app/app-paths.ts": [
+                {
+                    "name": "PathContainer",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "src/app/app-paths.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 181
+                },
+                {
+                    "name": "PathDescriptor",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "src/app/app-paths.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 181
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 1,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "server.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "app",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "server.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "run",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "__non_webpack_require__",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "mainModule",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "moduleFilename",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/about-us/about-us.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AboutUsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app-paths.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PATHS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.module.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "HttpLoaderFactory",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/contact-us/contact-us.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ContactUsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/events/events.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "EventsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/events/models/events.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IncomingEvents",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/footer/footer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/header/models/navigation-item.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "NavigationItem",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/partners/partners.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PartnersComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/i18n/formatted-translate.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "FormattedTranslateDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/atoms.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/atoms.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IMPORTS_EXPORTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/link-button/link-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LinkButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecondaryLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/links/link/link.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LinkComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/links/link/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/links/link/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/title/title.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/title/title.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/title/title.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Title",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/molecules.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/molecules.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IMPORTS_EXPORTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/navigation-bar/navigation-bar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavigationBarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NavigatinBar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/organisms/header/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Header",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/organisms/header/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/organisms/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "OrganismsHeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/organisms/organisms.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/organisms/organisms.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IMPORTS_EXPORTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/home-page/home-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TemplateHomePageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/home-page/home-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "HomePage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/home-page/home-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/templates.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/templates.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IMPORTS_EXPORTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

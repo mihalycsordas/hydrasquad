@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {NavigationItem} from '../services/navigation-item/model/navigation-item';
 import {PATHS} from '../app-paths';
+import {NavigationItem} from "@app/header/models/navigation-item.interface";
 
 @Component({
     selector: 'app-header',
@@ -11,23 +11,23 @@ export class HeaderComponent {
 
     listItems: Array<NavigationItem> = [
         {
-            itemLabel: 'NavigationItems.HomePage',
+            itemLabel: 'Gallery',
             itemLink: `/${PATHS.home.main}`,
         },
         {
-            itemLabel: 'NavigationItems.AboutUs',
+            itemLabel: 'About us',
             itemLink: `/${PATHS.about_us.main}`,
         },
         {
-            itemLabel: 'NavigationItems.Partners',
+            itemLabel: 'Partners',
             itemLink: `/${PATHS.partners.main}`,
         },
         {
-            itemLabel: 'NavigationItems.Events',
+            itemLabel: 'Events',
             itemLink: `/${PATHS.events.main}`,
         },
         {
-            itemLabel: 'NavigationItems.ContactUs',
+            itemLabel: 'Contact us',
             itemLink: `/${PATHS.contact.main}`,
         }
     ];

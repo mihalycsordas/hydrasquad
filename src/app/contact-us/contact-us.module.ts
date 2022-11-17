@@ -1,13 +1,14 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ContactUsComponent} from './contact-us.component';
-import {TitleSectionModule} from '../title-section/title-section.module';
+import {AtomsModule} from "@atoms/atoms.module";
+import {ContactUsRoutingModule} from "@app/contact-us/contact-us-routing.modulte";
 
 @NgModule({
     imports: [
         CommonModule,
-
-        TitleSectionModule
+        AtomsModule,
+        ContactUsRoutingModule
     ],
     exports: [
         ContactUsComponent

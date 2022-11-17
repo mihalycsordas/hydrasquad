@@ -1,18 +1,19 @@
 import {NgModule} from '@angular/core';
 import {HomeComponent} from './home.component';
 import {CommonModule} from '@angular/common';
-import {TitleSectionModule} from '../title-section/title-section.module';
 import {TranslateModule} from '@ngx-translate/core';
+import {HomeRoutingModule} from "@app/home/home-routing.module";
+import {TemplatesModule} from "../../stories/templates/templates.module";
 
 @NgModule({
     imports: [
         CommonModule,
-
         TranslateModule,
-        TitleSectionModule
+        HomeRoutingModule,
+        TemplatesModule
     ],
     exports: [
-        HomeComponent
+        HomeComponent,
     ],
     declarations: [HomeComponent]
 })

@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li *ngFor="let items of listItems">
+            <app-link color="primary" [routerLink]="items.itemLink" [text]="items.itemLabel"></app-link>
+        </li>
+    </ul>
+</nav>
