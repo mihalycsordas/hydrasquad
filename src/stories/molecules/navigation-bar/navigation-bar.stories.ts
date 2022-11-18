@@ -23,8 +23,16 @@ export const NavigatinBar = template.bind({});
 NavigatinBar.args = {
     listItems: [
         {
-            itemLabel: 'Valami',
+            itemLabel: 'Home',
             itemLink: '#'
-        }
+        },
+        {
+            itemLabel: 'About us',
+            itemLink: '#'
+        },
+        {
+            itemLabel: 'Contact us',
+            itemLink: '#'
+        },
     ]
 };
