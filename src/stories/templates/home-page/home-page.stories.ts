@@ -1,18 +1,17 @@
 import { moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import type { Story, Meta } from '@storybook/angular';
-import HomePageComponent from "./home-page.component";
-import {HeaderModule} from "../../../app/header/header.module";
 import {OrganismsModule} from "../../organisms/organisms.module";
-import {Input} from "@angular/core";
+import TemplateHomePageComponent from "./home-page.component";
+import {RouterTestingModule} from "@angular/router/testing";
 
 
 export default {
     title: 'Templates/HomePage',
-    component: HomePageComponent,
+    component: TemplateHomePageComponent,
     decorators: [
         moduleMetadata({
-            imports: [CommonModule, OrganismsModule],
+            imports: [CommonModule, OrganismsModule, RouterTestingModule],
         }),
     ],
     parameters: {
@@ -21,7 +20,7 @@ export default {
     },
 } as Meta;
 
-const Template: Story<HomePageComponent> = (args: HomePageComponent) => ({
+const Template: Story<TemplateHomePageComponent> = (args: TemplateHomePageComponent) => ({
     props: args,
 });
 
@@ -29,19 +28,36 @@ export const HomePage = Template.bind({});
 HomePage.args = {
     listItems: [
         {
-            itemLabel: 'Valami',
+            itemLabel: 'Nav 1',
             itemLink: '#'
         },
         {
-            itemLabel: 'Valami',
+            itemLabel: 'Nav 2',
+            itemLink: '#'
+        },
+        {
+            itemLabel: 'Nav 3',
             itemLink: '#'
         },
     ],
     titleText: 'Lorem ipsum',
     titleDescription: 'Lorem ipsum dolor sit amet',
+    imageGallery: [
+        {
+            url: 'https://via.placeholder.com/100',
+            alt: 'ss',
+        },
+        {
+            url: 'https://via.placeholder.com/200',
+            alt: 'sss',
+        },
+        {
+            url: 'https://via.placeholder.com/300',
+            alt: 'sss',
+        },
+        {
+            url: 'https://via.placeholder.com/400',
+            alt: 'sss',
+        },
+    ]
 }
-
-HomePage.parameters = {
-    // Set the viewports in Chromatic at a story level.
-    chromatic: { viewports: [320, 1200] },
-};

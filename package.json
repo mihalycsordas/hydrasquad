@@ -48,6 +48,10 @@
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
+    "scripts": {
+        "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
+    },
+
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.4",
     "@angular-eslint/builder": "13.0.1",

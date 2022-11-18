@@ -21,630 +21,800 @@ Node.js version : v16.15.1
 
 Operating system : macOS Monterey
 
-[12:25:37] No configuration file found, switching to CLI flags.
-[12:25:37] Using tsconfig file : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.browserslistrc
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.editorconfig
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.eslintrc.yaml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.gitignore
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.npmrc
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/README.md
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/angular.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/build-storybook.log
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/documentation.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/karma.conf.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/package-lock.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/package.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/server.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.app.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.server.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.spec.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/tslint.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.circleci/config.yml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/.gitignore
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/hydrasquad.iml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/modules.xml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/vcs.xml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/main.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/workspace.xml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/tsconfig.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/preview.js
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/.storybook/typings.d.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/custom-theme.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/favicon.ico
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/index.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/main.server.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/polyfills.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/main.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/test.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/inspectionProfiles/Project_Default.xml
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-paths.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-routing.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.server.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/3rdpartylicenses.txt
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/625.bf08046fcc1d97b7.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/favicon.ico
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/header_bg.23bea1eb205a7db6.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/header_effect.0c32871f9453f2d7.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/index.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/main.d6b1c1b4cc30cfb3.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/polyfills.d51ac27dda9b28a2.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/runtime.dc007e1500fafd3c.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/styles.c3e8a880fc178f60.css
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/.gitkeep
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.prod.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Button.stories.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Header.stories.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Introduction.stories.mdx
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Page.stories.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/User.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/button.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/button.css
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/header.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/header.css
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/page.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/page.css
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/main.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/01f7324f83255ab85b72674e56dce2da.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0248a911ba2a3c5f9271ed2391bea576.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/03e9f1501106908aea1585e1f40210d0.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/04ac5b8385006c8061099f5103fbe603.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0633ec7c70ce921060378c872bd9829b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0754039f1c5ecd4bc49976d27916bae6.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/07b0fba827fd32f8bd3e3286515b3c75.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0b5f2d0801aea40571f49ff7a30e943b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0c1742ac279f035946a144aadb25ed52.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0f2be09faff32a8262b28db871759ad3.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/10b2a4ead05a7c4fade1bdebd5d81486.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/135fe6afb4ddd7c2a7f249a977986b45.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/13ebbda1db9c7f72a3f358645a258ea5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/14edf397a11bdbdb010b1a77642e1bf4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/15a122f15660f642740f30d1a311f3a1.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/1a029355d2845d5906d650df8ea1e0f5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/22adde16a2dab3f3e6ed8ceac05cdc15.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/24a07427aa71dfa029db682b23bd2a84.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/250eba22765df76df49667a93f66be7d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2513a8d110a284707e36c3cd118db265.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/29a871cb5801c83d78a7d483cdcaedf9.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2b4bc4ab32aea4a2896104a7b15751a4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2d0ad7b631332cfafd9fba5ec4cb2a4b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2f0e0a13a9f3c02262f18df5c9385152.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2f71214200db57785af62294b42f81a4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/346e229a6ad93b01d5757c651a7f6327.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/38549b4ff6a4f4d5cb17deb2dc111970.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3b0eab8613a06c3aca51bf09b0388d11.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3be43099297187f8589a9a173e466aa4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3d83bbca21b53c37f0640d3303008506.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3e1abcc562bd207457cda5ddf21ec687.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3e28c770667f5d233d5e5586c70886e2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3f7b2fbe9d30a5ef67c0ef9c803f3b39.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3fafb44d30cba82ae046f89ab08f85fa.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4182b73a6365b566b12922b57b3b5791.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/41b8849737f72f9b9df18c25cdf75470.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/430a635a5da2c7770e0a78223f9c78ea.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/437cbe86c9e2a0bdc231e1c2dc908393.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/43c32498c34e4ac04416f46e2a1785f9.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4714f9c985667e09606a8b5241baaac2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4c2483fac19b49840fc51be8146b01b5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4fdba183d007e9862264cdf81eebbfe4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/53373c097485c2d28d3b983f694721ee.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/543ce810a62fc38e32977966fe1ca881.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/54736d4e20f11d0b534d5f0248ddfa40.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5607e1dc040a0ee836123399fbe0c967.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5650c7aff43ede19e84e6202e20cc945.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5caae59975a2d687a367148845172877.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5ccce6c5ff5b1579b93ba2269a6b8b6c.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5fcdd901ff104c2ed68160e718acb6f6.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/61adaae98900c179a98a40c034549c67.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/63168769ed5b8afa795de749e1231601.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/643dc39fd524e0caadda63614b521462.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/6553640a05da2fcd99fd9bc7a0941e2a.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/65f4d2e0c2d2a4f6ffaaed4ef611ce0b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/71009d0649c2e973294cc9bf3ec99fec.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/73ace37daafe53864fbcd29b6959623b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/74b8a940b6d11b23c7375cc8201271cc.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/76d4d7fcf8b2b7e27e65d632b723576d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7e924f226719fd736474c5db9dce82ad.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7ca6080dd7c313efd08a56f006fbc661.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8784950aab2d46d772343bb85176bd18.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7cf939d98b5ec2d77598ab6d1be855a3.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8bea3750b72c5fc03388741967b15cc5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8ff5f73dcdd4c620a80cbba076b59900.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/899a423d9b6aae53835ca5c50539cb4c.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/90e52db0d78dc88e117a7d1487028078.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/99ac0ed72aa1df2297c0bfff76f19c3b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9f56b0e79ebe83fb0bc0b2a3ce2190a8.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a8d6fd3442ac366d4bdb807e032292f6.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a90f789e387fb2a375e3cf221785e29a.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a96e632b6794fbe808effa10fb71b43e.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/aac8886167ba88e10cbc6909af1fd9f7.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ae49a7be466d49e4178d923af901ed20.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/af0423e96a917c044575fc3a96ef0179.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b0aaf3837afff6354a1a8c0f3d1468ab.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b206a6e091a9792c42942027d4d0ac02.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b2d6438b66a5968f1c0a64fceb5df9b5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b1b28f1b1ac1475e50ae16664f2cec60.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b8a7ae35fae1371a8d584e1d3422d069.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b908c355c7ccc1bf89392df6f356aed6.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/bae0e6a218a57117ab89abdd7d8356f2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/bd2d1a0de49372ab9daafbc3b26b1a30.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c0744470950d0ec680c1d6ed54851e72.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c15945d1ea5290bfbbd4457fbbf9882a.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c3a99f70dcb61086b44e666389d1a49d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c84b73d6368e88601d38bfabf0b77a73.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c9adb0a6a52aed1c88b66a21374974d9.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/cd296662333d140a4957ad4f678396ad.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/cd67bc0197631993455edc082668bdb0.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d36c0a3c57853ac4290d7f0bad3092e9.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d7139f9ecab0691c200116770bbc5a37.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d7aad7c0ba39198b7a010b27cffcd0c2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/db3a433bef207374b35939edbd3ba552.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/db44f011962698206847e0dc7ac2ee25.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/dfdf8eb4cf34ef661e96f21af25ad848.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e2eac3c3a23d30e11d587325e55ae6a2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e46cd3609b352e8d9423de9dbd2cd772.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e50c8220a5d3c6ecfaecf944a7a93ee2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e530215fef332b8e6d1a7dcb7a554502.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e55b6f1219c6402e0516f4f9352cc216.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/eb7d8d6bb0dda036ce3cee0dd2bd8e5f.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/eceee16c0f984707f4499520eabdbce2.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/edfad09cd3d9b9d9c21850611ef46876.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ef9b6d47e770421260c1dc0ee073d12b.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f34b204ab5681b03025a5d7ea9e78249.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f384e0cb18afe0aa6b73d7919dba833e.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f63317d8b5c8cb41956f30b96aadd4f5.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fc2021729f990f7c704d3089e9aab84d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fcaa3ff7fbff24a3aad733d983c510be.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fea81da0533f38d54fdd2ef276dbb1f0.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us-routing.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us-routing.modulte.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events-routing.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.html
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home-routing.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/language/app-language.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners-routing.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.scss
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/.DS_Store
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.ts
-[12:25:37] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.spec.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/3rdpartylicenses.txt
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/625.59cc7b9fc77f0c13.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/favicon.ico
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/header_bg.23bea1eb205a7db6.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/header_effect.0c32871f9453f2d7.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/index.html
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/main.d6b1c1b4cc30cfb3.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/polyfills.d51ac27dda9b28a2.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/runtime.4a3e08947e7b235c.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/styles.c3e8a880fc178f60.css
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/server/3rdpartylicenses.txt
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/server/main.js
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/i18n/en.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/i18n/hu.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_bg.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_bg2.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_effect.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/hydra_group_image.jpeg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/hydra_logo.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/sponzored_by_anareus.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/code-brackets.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/comments.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/colors.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/flow.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/direction.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/plugin.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/repo.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/stackalt.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/base/_reset.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/layout/_breakpoints.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/mixins/_container.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/abstracts/_colors.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/utilities/_display.scss
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1826659c87d363a232a939f6883d89c8.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/18fc14479fbb73c03647ccb42974a3de.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1d777d29bd65d6ed9d25c980fae97329.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/2023ec908281979f28e8ece0b3b1251a.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1e8f5eb73a53ea047d72ca6560b40029.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/3f98b5945cc8a01e6c77c02ace0d8a6f.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/4ca762e2979dc6ec7d268f07ad934edc.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/3af5184917095995bd100c3924c6b062.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/4e8ac748146e6b88fe01d43c9865b1e6.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/5096c8ea940da88c8c42063c6c701d54.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/51a32d1ba0f19a50dd324ddc2f158745.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/551ebaeb3a27491be38e577c62097156.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/842b68f751781a2be92cfa077df00c30.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/a2f4686cc67cf79c5fa7b5b1098ecdc4.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/aa2cd43e74c8a8459becd65061b3c341.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/b8b8ab4b3fb3730cf8aa17477c335740.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/ba318c9b1cf0802f9a729e425d83d005.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/bb0fd1218ffcc49b71426ea8f7a598a3.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/bf074116049eedac435e08446d380b8d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/b4527a1d0fb1e7f679c5d8c3bb622c51.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/c6df2e8a1cf0882b31c4885a0390287d.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/cdd3e85a0849b79d911a74b3eecf3658.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/dd316c710b1baf5d3cd97e7fc293de21.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/eddbae85510182a14a96ae54cc466dd0.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/e1b29350da240f23ae31a2df51e77201.json
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/1.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/2.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/index.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/index.pack.old
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/0.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/contentful/contentful.service.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/formatted-translate.directive.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/i18n.module.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/page-title/title-service.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/header_bg.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/header_effect.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/hydra_logo.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/sponzored_by_anareus.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/13-hours.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/3day_mosahi.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/ORW.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/border-war-14.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/border-war_14.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/leghosszabb_nap.jpeg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/lone-survivor.jpg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/operation-thunder.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/terminator_savation_event.jpeg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/zona-maraton.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/0.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/1.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/2.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/index.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/index.pack.old
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/b0e2e1ccd86d814a88ec0db7d1a727326e49a3f0/index.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/b0e2e1ccd86d814a88ec0db7d1a727326e49a3f0/0.pack
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/events/model/incoming-events.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/navigation-item/model/navigation-item.ts
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/header_bg.png
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/header_effect.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/hydra_logo.svg
-[12:25:37] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/sponzored_by_anareus.svg
-[12:25:37] Searching package.json file
-[12:25:37] package.json file found
-[12:25:37] Processing package.json dependencies
-[12:25:37] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[12:25:37] README.md file found
-[12:25:37] Error during /Users/mihaly.csordas/www2/hydrasquad/CHANGELOG read
-[12:25:37] Continuing without CHANGELOG.md file
-[12:25:37] Error during /Users/mihaly.csordas/www2/hydrasquad/CONTRIBUTING read
-[12:25:37] Continuing without CONTRIBUTING.md file
-[12:25:37] Error during /Users/mihaly.csordas/www2/hydrasquad/LICENSE read
-[12:25:37] Continuing without LICENSE.md file
-[12:25:37] Error during /Users/mihaly.csordas/www2/hydrasquad/TODO read
-[12:25:37] Continuing without TODO.md file
-[12:25:37] Get dependencies data
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/server.ts
-[12:25:38] found          : app
-[12:25:38] found          : run
-[12:25:38] found          : __non_webpack_require__
-[12:25:38] found          : mainModule
-[12:25:38] found          : moduleFilename
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/main.server.ts
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/polyfills.ts
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/main.ts
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/test.ts
-[12:25:38] found          : require
-[12:25:38] found          : context
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-paths.ts
-[12:25:38] found          : PATHS
-[12:25:38] found          : PathDescriptor
-[12:25:38] found          : PathContainer
-[12:25:38] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-routing.module.ts
-[12:25:38] Analysing routes definitions and clean them if necessary
-[12:25:39] Routes parsing error, maybe a trailing comma or an external variable, trying to fix that later after sources scanning.
-[12:25:39] found          : AppRoutingModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.ts
-[12:25:39] found          : AppComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.module.ts
-[12:25:39] found          : HttpLoaderFactory
-[12:25:39] found          : AppModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- BrowserModule
-[12:25:39]                : 	- BrowserAnimationsModule
-[12:25:39]                : 	- HttpClientModule
-[12:25:39]                : 	- TranslateModule
-[12:25:39]                : 	- I18nModule
-[12:25:39]                : 	- HeaderModule
-[12:25:39]                : 	- FooterModule
-[12:25:39]                : 	- AppRoutingModule
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- AppComponent
-[12:25:39]                : - providers:
-[12:25:39]                : 	- TitleService
-[12:25:39]                : 	- ContentfulService
-[12:25:39]                : - bootstrap:
-[12:25:39]                : 	- AppComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.server.module.ts
-[12:25:39] found          : AppServerModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- AppModule
-[12:25:39]                : 	- ServerModule
-[12:25:39]                : - bootstrap:
-[12:25:39]                : 	- AppComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.prod.ts
-[12:25:39] found          : environment
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.ts
-[12:25:39] found          : environment
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Button.stories.ts
-[12:25:39] found          : Template
-[12:25:39] found          : Primary
-[12:25:39] found          : Secondary
-[12:25:39] found          : Large
-[12:25:39] found          : Small
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Header.stories.ts
-[12:25:39] found          : Template
-[12:25:39] found          : LoggedIn
-[12:25:39] found          : LoggedOut
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Page.stories.ts
-[12:25:39] found          : Template
-[12:25:39] found          : LoggedOut
-[12:25:39] found          : LoggedIn
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/User.ts
-[12:25:39] found          : User
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/button.component.ts
-[12:25:39] found          : ButtonComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/header.component.ts
-[12:25:39] found          : HeaderComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/page.component.ts
-[12:25:39] found          : PageComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us-routing.module.ts
-[12:25:39] Analysing routes definitions and clean them if necessary
-[12:25:39] found          : AboutUsRoutingModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- AboutUsModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.ts
-[12:25:39] found          : AboutUsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.module.ts
-[12:25:39] found          : AboutUsModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- TitleSectionModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- AboutUsComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- AboutUsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us-routing.modulte.ts
-[12:25:39] Analysing routes definitions and clean them if necessary
-[12:25:39] found          : ContactUsRoutingModulte
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- ContactUsModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.ts
-[12:25:39] found          : ContactUsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.module.ts
-[12:25:39] found          : ContactUsModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- TitleSectionModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- ContactUsComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- ContactUsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events-routing.module.ts
-[12:25:39] Analysing routes definitions and clean them if necessary
-[12:25:39] found          : EventsRoutingModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- EventsModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.ts
-[12:25:39] found          : EventsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.module.ts
-[12:25:39] found          : EventsModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- I18nModule
-[12:25:39]                : 	- TitleSectionModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- EventsComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- EventsComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.ts
-[12:25:39] found          : FooterComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.module.ts
-[12:25:39] found          : FooterModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- FooterComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- FooterComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.ts
-[12:25:39] found          : HeaderComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.module.ts
-[12:25:39] found          : HeaderModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- BrowserModule
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- MatGridListModule
-[12:25:39]                : 	- I18nModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- HeaderComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- HeaderComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home-routing.module.ts
-[12:25:39] Analysing routes definitions and clean them if necessary
-[12:25:39] found          : HomeRoutingModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- HomeModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.ts
-[12:25:39] found          : HomeComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.module.ts
-[12:25:39] found          : HomeModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- TranslateModule
-[12:25:39]                : 	- TitleSectionModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- HomeComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- HomeComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/language/app-language.ts
-[12:25:39] found          : AppLanguage
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners-routing.module.ts
-[12:25:39] Analysing routes definitions and clean them if necessary
-[12:25:39] found          : PartnersRoutingModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : 	- PartnersModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- RouterModule
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.ts
-[12:25:39] found          : PartnersComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.module.ts
-[12:25:39] found          : PartnersModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- TitleSectionModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- PartnersComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- PartnersComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.ts
-[12:25:39] found          : TitleSectionComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.module.ts
-[12:25:39] found          : TitleSectionModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- CommonModule
-[12:25:39]                : 	- RouterModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- TitleSectionComponent
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- TitleSectionComponent
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/contentful/contentful.service.ts
-[12:25:39] found          : CONFIG
-[12:25:39] found          : ContentfulService
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/formatted-translate.directive.ts
-[12:25:39] found          : FormattedTranslateDirective
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/i18n.module.ts
-[12:25:39] found          : I18nModule
-[12:25:39]                : - imports:
-[12:25:39]                : 	- TranslateModule
-[12:25:39]                : - exports:
-[12:25:39]                : 	- TranslateModule
-[12:25:39]                : 	- FormattedTranslateDirective
-[12:25:39]                : - declarations:
-[12:25:39]                : 	- FormattedTranslateDirective
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/page-title/title-service.ts
-[12:25:39] found          : TitleService
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/events/model/incoming-events.ts
-[12:25:39] found          : IncomingEvents
-[12:25:39] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/navigation-item/model/navigation-item.ts
-[12:25:39] found          : ListItem
-[12:25:39] found          : NavigationItem
-[12:25:39] found          : SelectableItem
-[12:25:39] -------------------
-[12:25:39] Project statistics 
-[12:25:39] - files      : 317
-[12:25:39] - module     : 17
-[12:25:39] - component  : 12
-[12:25:39] - directive  : 1
-[12:25:39] - injectable : 2
-[12:25:39] - interface  : 5
-[12:25:39] -------------------
-[12:25:39] Prepare components
-[12:25:39]  AboutUsComponent has a templateUrl, include it
-[12:25:39]  AboutUsComponent has styleUrls, include them
-[12:25:39]  AppComponent has a templateUrl, include it
-[12:25:39]  AppComponent has styleUrls, include them
-[12:25:39]  ButtonComponent has styleUrls, include them
-[12:25:39]  ContactUsComponent has a templateUrl, include it
-[12:25:39]  ContactUsComponent has styleUrls, include them
-[12:25:39]  EventsComponent has a templateUrl, include it
-[12:25:39]  EventsComponent has styleUrls, include them
-[12:25:39]  FooterComponent has a templateUrl, include it
-[12:25:39]  FooterComponent has styleUrls, include them
-[12:25:39]  HeaderComponent has styleUrls, include them
-[12:25:39]  HeaderComponent has a templateUrl, include it
-[12:25:39]  HeaderComponent has styleUrls, include them
-[12:25:39]  HomeComponent has a templateUrl, include it
-[12:25:39]  HomeComponent has styleUrls, include them
-[12:25:39]  PageComponent has styleUrls, include them
-[12:25:39]  PartnersComponent has a templateUrl, include it
-[12:25:39]  PartnersComponent has styleUrls, include them
-[12:25:39]  TitleSectionComponent has a templateUrl, include it
-[12:25:39]  TitleSectionComponent has styleUrls, include them
-[12:25:39] Prepare modules
-[12:25:39] Prepare directives
-[12:25:39] Prepare injectables
-[12:25:39] Prepare interfaces
-[12:25:39] Prepare miscellaneous
-[12:25:39] Process documentation coverage report
-[12:25:39] Generating documentation in export format json
-[12:25:39] Documentation generated in ./ in 2.377 seconds
+[20:47:04] No configuration file found, switching to CLI flags.
+[20:47:04] Using tsconfig file : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.browserslistrc
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.editorconfig
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.eslintrc.yaml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.gitignore
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.npmrc
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/README.md
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/angular.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/build-storybook.log
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/documentation.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/karma.conf.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/package-lock.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/package.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/server.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.app.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.server.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/tsconfig.spec.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/tslint.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.circleci/config.yml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/.gitignore
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/hydrasquad.iml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/modules.xml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/vcs.xml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.idea/workspace.xml
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/main.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/tsconfig.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.storybook/preview.js
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/.storybook/typings.d.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/custom-theme.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/favicon.ico
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/index.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/main.server.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/polyfills.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/main.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/test.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/3rdpartylicenses.txt
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/625.bf08046fcc1d97b7.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/favicon.ico
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/header_bg.23bea1eb205a7db6.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/header_effect.0c32871f9453f2d7.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/index.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/main.d6b1c1b4cc30cfb3.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/polyfills.d51ac27dda9b28a2.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/runtime.dc007e1500fafd3c.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/styles.c3e8a880fc178f60.css
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/.gitkeep
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.prod.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-paths.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-routing.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.scss
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.server.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/Introduction.stories.mdx
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/User.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/brand-colors.stories.mdx
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/main.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/3rdpartylicenses.txt
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/625.59cc7b9fc77f0c13.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/favicon.ico
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/header_bg.23bea1eb205a7db6.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/header_effect.0c32871f9453f2d7.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/index.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/main.d6b1c1b4cc30cfb3.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/polyfills.d51ac27dda9b28a2.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/runtime.4a3e08947e7b235c.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/styles.c3e8a880fc178f60.css
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/01f7324f83255ab85b72674e56dce2da.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0248a911ba2a3c5f9271ed2391bea576.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/03e9f1501106908aea1585e1f40210d0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0754039f1c5ecd4bc49976d27916bae6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0633ec7c70ce921060378c872bd9829b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/087c6ffadbd077ec9f3c079eff2ed5e2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0b5f2d0801aea40571f49ff7a30e943b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0c1742ac279f035946a144aadb25ed52.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0f2be09faff32a8262b28db871759ad3.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/04ac5b8385006c8061099f5103fbe603.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/07b0fba827fd32f8bd3e3286515b3c75.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/10b2a4ead05a7c4fade1bdebd5d81486.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/135fe6afb4ddd7c2a7f249a977986b45.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/13ebbda1db9c7f72a3f358645a258ea5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/14edf397a11bdbdb010b1a77642e1bf4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/15a122f15660f642740f30d1a311f3a1.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/10a0b87220fdbb574c5c308fd74ce78d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/1a029355d2845d5906d650df8ea1e0f5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/0061892ad611ddd195b12e5b96d9d6b1.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/138e4956cdd3d1aa08c96348f7c77044.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/22adde16a2dab3f3e6ed8ceac05cdc15.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/24a07427aa71dfa029db682b23bd2a84.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/250eba22765df76df49667a93f66be7d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2513a8d110a284707e36c3cd118db265.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/1eb51b34c747c22158c14bb3fc98a05a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/29a871cb5801c83d78a7d483cdcaedf9.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2b4bc4ab32aea4a2896104a7b15751a4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2d0ad7b631332cfafd9fba5ec4cb2a4b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/1807642962ccab80bf10e565af74147b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2f71214200db57785af62294b42f81a4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/346e229a6ad93b01d5757c651a7f6327.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/263fde614ff7aac20c9b83a45aca0f0a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/37b16e0f3cf9a1b35e40e2b005435165.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/38549b4ff6a4f4d5cb17deb2dc111970.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3b0eab8613a06c3aca51bf09b0388d11.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3be43099297187f8589a9a173e466aa4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3d83bbca21b53c37f0640d3303008506.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3e1abcc562bd207457cda5ddf21ec687.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3e28c770667f5d233d5e5586c70886e2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3f7b2fbe9d30a5ef67c0ef9c803f3b39.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/1de7ff997ecfda738af36343e2cd3547.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3fafb44d30cba82ae046f89ab08f85fa.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4182b73a6365b566b12922b57b3b5791.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/3a22f18160be0dfb9b46e35eb5af21da.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/41b8849737f72f9b9df18c25cdf75470.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/430a635a5da2c7770e0a78223f9c78ea.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/43c32498c34e4ac04416f46e2a1785f9.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/437cbe86c9e2a0bdc231e1c2dc908393.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4714f9c985667e09606a8b5241baaac2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4c2483fac19b49840fc51be8146b01b5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/4fdba183d007e9862264cdf81eebbfe4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5330e1a6b70f14015b282980c8c2642e.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/53373c097485c2d28d3b983f694721ee.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/543ce810a62fc38e32977966fe1ca881.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/54736d4e20f11d0b534d5f0248ddfa40.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5607e1dc040a0ee836123399fbe0c967.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5650c7aff43ede19e84e6202e20cc945.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/495c7e2dcc377947827f37bbf6dfa46c.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5740ae4a100c529665749b949c4bc853.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/53ecdf9fb9ffd77588f54b163a73278d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5caae59975a2d687a367148845172877.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5ccce6c5ff5b1579b93ba2269a6b8b6c.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/61adaae98900c179a98a40c034549c67.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5bce51b4776019fa08f0604d06bcf91b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/63168769ed5b8afa795de749e1231601.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/643dc39fd524e0caadda63614b521462.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/6553640a05da2fcd99fd9bc7a0941e2a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/62a4f38bdfbe0a064dac2915d15a00a1.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/65f4d2e0c2d2a4f6ffaaed4ef611ce0b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/6bf3bbfa8f8f4a7426b13f2504567735.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/71009d0649c2e973294cc9bf3ec99fec.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/6f769fd92d8e3cf5725e993b6dd6963a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/723e70fb03d9d11278050bd1bc98e258.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/74b8a940b6d11b23c7375cc8201271cc.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/2f0e0a13a9f3c02262f18df5c9385152.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7782586187ad0b9d04f3b82091ecbf55.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7ca6080dd7c313efd08a56f006fbc661.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/73ace37daafe53864fbcd29b6959623b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7cf939d98b5ec2d77598ab6d1be855a3.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7d2e62f28992d547b00d9ae3567f8303.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7d56e4e9aca037ffa0aa699e136c73fc.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/7e924f226719fd736474c5db9dce82ad.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8784950aab2d46d772343bb85176bd18.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/84d96cc3dfa499f227683fb99d7397b1.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/899a423d9b6aae53835ca5c50539cb4c.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8a628055aaf631407032f464788ab54a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8bea3750b72c5fc03388741967b15cc5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8c55c6cea61e3b6628092efb1d4fc058.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8ff5f73dcdd4c620a80cbba076b59900.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/8aa9166f29c6ad1bcc36e809998cb9b2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/76d4d7fcf8b2b7e27e65d632b723576d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/90e52db0d78dc88e117a7d1487028078.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/5fcdd901ff104c2ed68160e718acb6f6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/968403859b69b065ea6393b43bd8f655.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/99ac0ed72aa1df2297c0bfff76f19c3b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9a252ba64914b9d8f47b6efa2e74fdf2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9a85647f2a37fc864f2e96d6bee857c8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9be1a19ae756427a5fded7298e49fe24.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9083be34549458f7596c0013f277a7b6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/909491a6fda32c9d552bc366ba1c42f8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9f56b0e79ebe83fb0bc0b2a3ce2190a8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a84705ed28480514d2fa07f38f7e6c8d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a8d6fd3442ac366d4bdb807e032292f6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a66a4ddc94ade5c1e6b251806a75c167.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/94799bfc2dc095288fe8426a57ebeb47.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a96e632b6794fbe808effa10fb71b43e.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/a90f789e387fb2a375e3cf221785e29a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/aac8886167ba88e10cbc6909af1fd9f7.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/9ef745a806f9bfe01e1760189a8c186f.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ae49a7be466d49e4178d923af901ed20.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b0aaf3837afff6354a1a8c0f3d1468ab.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/af0423e96a917c044575fc3a96ef0179.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b1b28f1b1ac1475e50ae16664f2cec60.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b206a6e091a9792c42942027d4d0ac02.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/aaba12912caa1064c711b25f0059e98b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/aa712ade7a2f206a901065c6351cf1ab.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b908c355c7ccc1bf89392df6f356aed6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b8a7ae35fae1371a8d584e1d3422d069.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ba2372979bb121662a478b3cfc9e0622.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/bd2d1a0de49372ab9daafbc3b26b1a30.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c0744470950d0ec680c1d6ed54851e72.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c15945d1ea5290bfbbd4457fbbf9882a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c18489a3aac26fdf6ab73d35fa88b7b4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/bae0e6a218a57117ab89abdd7d8356f2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c3a99f70dcb61086b44e666389d1a49d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b566471db87bc800f34c1e9c7f3bd006.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c84b73d6368e88601d38bfabf0b77a73.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c4b399f59850efff46b491e06acc9c1b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c835512a6fd0f8e47d2aa3296d454bd0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/cd296662333d140a4957ad4f678396ad.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/cd67bc0197631993455edc082668bdb0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d36c0a3c57853ac4290d7f0bad3092e9.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d7139f9ecab0691c200116770bbc5a37.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/d7aad7c0ba39198b7a010b27cffcd0c2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/db3a433bef207374b35939edbd3ba552.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/db44f011962698206847e0dc7ac2ee25.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/dff152c3a58f54373120673fa1fae84f.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/dfdf8eb4cf34ef661e96f21af25ad848.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e18a904e8856b2b45fe77d064cb32df8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e46cd3609b352e8d9423de9dbd2cd772.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e50c8220a5d3c6ecfaecf944a7a93ee2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e530215fef332b8e6d1a7dcb7a554502.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e55b6f1219c6402e0516f4f9352cc216.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e2eac3c3a23d30e11d587325e55ae6a2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/b2d6438b66a5968f1c0a64fceb5df9b5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e6e9dcce3c4fbea29e8d8da80a909352.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e9e57a9f385a87c73cdec8f22177e6f0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/eb7d8d6bb0dda036ce3cee0dd2bd8e5f.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ec58c28d4b8d8eda661e2a843ff1e90b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/eceee16c0f984707f4499520eabdbce2.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/edfad09cd3d9b9d9c21850611ef46876.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ee3db5ae7dd7583ff153b1708c0bc02d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/c9adb0a6a52aed1c88b66a21374974d9.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f05c9dbb7a1267c972c8367e36a1f1b8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f34b204ab5681b03025a5d7ea9e78249.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f384e0cb18afe0aa6b73d7919dba833e.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f59334842a50029b5a5a8d5f4bf073ed.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f63317d8b5c8cb41956f30b96aadd4f5.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fbecbadcded9d5e876eed246b133df30.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/f783bad896d0b3be560c9147e3134b2a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fc2021729f990f7c704d3089e9aab84d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fcaa3ff7fbff24a3aad733d983c510be.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/server/3rdpartylicenses.txt
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/server/main.js
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/i18n/en.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/i18n/hu.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/fea81da0533f38d54fdd2ef276dbb1f0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_bg.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_bg2.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/header_effect.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/hydra_group_image.jpeg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/hydra_logo.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/sponzored_by_anareus.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us-routing.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.html
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us-routing.modulte.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.html
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events-routing.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.html
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.html
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.scss
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home-routing.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.scss
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners-routing.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.html
+[20:47:04] Ignoring       : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.spec.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/language/app-language.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/.DS_Store
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/code-brackets.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/colors.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/comments.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/direction.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/flow.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/plugin.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/repo.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/assets/stackalt.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/atoms.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/index.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/molecules.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/e5aa9a51ee0fc6136e9596b6de0631ca.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/organisms.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/templates.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/layout/_breakpoints.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/abstracts/_colors.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/mixins/_container.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/utilities/_display.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/styles/base/_reset.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/babel-webpack/ef9b6d47e770421260c1dc0ee073d12b.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/0.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/1.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/2.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/index.pack.old
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/17a87b6e3b884d269726e4ac975934a05ac0e638/index.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1826659c87d363a232a939f6883d89c8.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1d777d29bd65d6ed9d25c980fae97329.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/1e8f5eb73a53ea047d72ca6560b40029.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/18fc14479fbb73c03647ccb42974a3de.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/2023ec908281979f28e8ece0b3b1251a.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/3af5184917095995bd100c3924c6b062.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/3f98b5945cc8a01e6c77c02ace0d8a6f.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/4ca762e2979dc6ec7d268f07ad934edc.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/5096c8ea940da88c8c42063c6c701d54.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/4e8ac748146e6b88fe01d43c9865b1e6.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/51a32d1ba0f19a50dd324ddc2f158745.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/551ebaeb3a27491be38e577c62097156.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/a2f4686cc67cf79c5fa7b5b1098ecdc4.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/aa2cd43e74c8a8459becd65061b3c341.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/842b68f751781a2be92cfa077df00c30.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/b4527a1d0fb1e7f679c5d8c3bb622c51.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/b8b8ab4b3fb3730cf8aa17477c335740.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/ba318c9b1cf0802f9a729e425d83d005.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/bb0fd1218ffcc49b71426ea8f7a598a3.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/bf074116049eedac435e08446d380b8d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/cdd3e85a0849b79d911a74b3eecf3658.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/c6df2e8a1cf0882b31c4885a0390287d.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/dd316c710b1baf5d3cd97e7fc293de21.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/e1b29350da240f23ae31a2df51e77201.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/babel-webpack/eddbae85510182a14a96ae54cc466dd0.json
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/header_bg.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/header_effect.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/hydra_logo.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/assets/img/sponzored_by_anareus.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/0.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/1.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/10.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/12.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/11.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/13.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/2.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/3.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/4.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/5.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/14.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/7.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/8.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/6.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/9.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/index.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/79edabd7dbeffc750e813857866320b4582694a9/index.pack.old
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/0.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/1.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/10.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/12.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/11.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/13.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/14.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/15.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/16.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/17.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/18.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/19.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/2.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/21.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/22.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/20.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/23.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/3.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/4.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/5.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/6.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/7.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/8.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/9.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/index.pack.old
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/angular-webpack/bd8fe22fd5fe145d62abad71846dfa0330ad10ae/index.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/13-hours.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/3day_mosahi.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/ORW.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/border-war-14.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/border-war_14.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/leghosszabb_nap.jpeg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/lone-survivor.jpg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/operation-thunder.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/terminator_savation_event.jpeg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/assets/img/events/zona-maraton.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/models/events.interface.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/models/navigation-item.interface.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/formatted-translate.directive.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/i18n.module.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/Header.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/header.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/header.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/header.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/header_bg.png
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/header_effect.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/hydra_logo.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/dist/hydrasquad/browser/assets/img/sponzored_by_anareus.svg
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/b0e2e1ccd86d814a88ec0db7d1a727326e49a3f0/0.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/b0e2e1ccd86d814a88ec0db7d1a727326e49a3f0/index.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/0.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/1.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/2.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/index.pack
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/.angular/cache/13.3.9/angular-webpack/54576ffa732e8e3c723cf6c5329e9af51995dee6/index.pack.old
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/Button.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/button.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/button.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/button.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.component.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.component.html
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.component.scss
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.stories.ts
+[20:47:04] Including      : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.component.ts
+[20:47:04] Searching package.json file
+[20:47:04] package.json file found
+[20:47:04] Processing package.json dependencies
+[20:47:04] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[20:47:04] README.md file found
+[20:47:04] Error during /Users/mihaly.csordas/www2/hydrasquad/CHANGELOG read
+[20:47:04] Continuing without CHANGELOG.md file
+[20:47:04] Error during /Users/mihaly.csordas/www2/hydrasquad/CONTRIBUTING read
+[20:47:04] Continuing without CONTRIBUTING.md file
+[20:47:04] Error during /Users/mihaly.csordas/www2/hydrasquad/LICENSE read
+[20:47:04] Continuing without LICENSE.md file
+[20:47:04] Error during /Users/mihaly.csordas/www2/hydrasquad/TODO read
+[20:47:04] Continuing without TODO.md file
+[20:47:04] Get dependencies data
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/server.ts
+[20:47:05] found          : app
+[20:47:05] found          : run
+[20:47:05] found          : __non_webpack_require__
+[20:47:05] found          : mainModule
+[20:47:05] found          : moduleFilename
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/main.server.ts
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/polyfills.ts
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/main.ts
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/test.ts
+[20:47:05] found          : require
+[20:47:05] found          : context
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.prod.ts
+[20:47:05] found          : environment
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.ts
+[20:47:05] found          : environment
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-paths.ts
+[20:47:05] found          : PATHS
+[20:47:05] found          : PathDescriptor
+[20:47:05] found          : PathContainer
+[20:47:05] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app-routing.module.ts
+[20:47:05] Analysing routes definitions and clean them if necessary
+[20:47:06] Routes parsing error, maybe a trailing comma or an external variable, trying to fix that later after sources scanning.
+[20:47:06] found          : AppRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.component.ts
+[20:47:06] found          : AppComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.module.ts
+[20:47:06] found          : HttpLoaderFactory
+[20:47:06] found          : AppModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- BrowserModule
+[20:47:06]                : 	- BrowserAnimationsModule
+[20:47:06]                : 	- HttpClientModule
+[20:47:06]                : 	- TranslateModule
+[20:47:06]                : 	- I18nModule
+[20:47:06]                : 	- HeaderModule
+[20:47:06]                : 	- FooterModule
+[20:47:06]                : 	- AppRoutingModule
+[20:47:06]                : 	- AboutUsModule
+[20:47:06]                : 	- HomeModule
+[20:47:06]                : 	- ContactUsModule
+[20:47:06]                : 	- EventsModule
+[20:47:06]                : 	- TemplatesModule
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- AppComponent
+[20:47:06]                : - bootstrap:
+[20:47:06]                : 	- AppComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/app.server.module.ts
+[20:47:06] found          : AppServerModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- AppModule
+[20:47:06]                : 	- ServerModule
+[20:47:06]                : - bootstrap:
+[20:47:06]                : 	- AppComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/User.ts
+[20:47:06] found          : User
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us-routing.module.ts
+[20:47:06] Analysing routes definitions and clean them if necessary
+[20:47:06] found          : AboutUsRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.ts
+[20:47:06] found          : AboutUsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.module.ts
+[20:47:06] found          : AboutUsModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- AtomsModule
+[20:47:06]                : 	- AboutUsRoutingModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- AboutUsComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- AboutUsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us-routing.modulte.ts
+[20:47:06] Analysing routes definitions and clean them if necessary
+[20:47:06] found          : ContactUsRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.component.ts
+[20:47:06] found          : ContactUsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/contact-us/contact-us.module.ts
+[20:47:06] found          : ContactUsModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- AtomsModule
+[20:47:06]                : 	- ContactUsRoutingModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- ContactUsComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- ContactUsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events-routing.module.ts
+[20:47:06] Analysing routes definitions and clean them if necessary
+[20:47:06] found          : EventsRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.ts
+[20:47:06] found          : EventsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.module.ts
+[20:47:06] found          : EventsModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : 	- AtomsModule
+[20:47:06]                : 	- EventsRoutingModule
+[20:47:06]                : 	- I18nModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- EventsComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- EventsComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.ts
+[20:47:06] found          : FooterComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.module.ts
+[20:47:06] found          : FooterModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- FooterComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- FooterComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.ts
+[20:47:06] found          : HeaderComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.module.ts
+[20:47:06] found          : HeaderModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- BrowserModule
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : 	- MatGridListModule
+[20:47:06]                : 	- I18nModule
+[20:47:06]                : 	- TemplatesModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- HeaderComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- HeaderComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home-routing.module.ts
+[20:47:06] Analysing routes definitions and clean them if necessary
+[20:47:06] found          : HomeRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.component.ts
+[20:47:06] found          : HomeComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home.module.ts
+[20:47:06] found          : HomeModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- TranslateModule
+[20:47:06]                : 	- HomeRoutingModule
+[20:47:06]                : 	- TemplatesModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- HomeComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- HomeComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners-routing.module.ts
+[20:47:06] Analysing routes definitions and clean them if necessary
+[20:47:06] found          : PartnersRoutingModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- RouterModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- RouterModule
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.ts
+[20:47:06] found          : PartnersComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.module.ts
+[20:47:06] found          : PartnersModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- CommonModule
+[20:47:06]                : 	- AtomsModule
+[20:47:06]                : 	- PartnersRoutingModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- PartnersComponent
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- PartnersComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/language/app-language.ts
+[20:47:06] found          : AppLanguage
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/atoms.module.ts
+[20:47:06] found          : IMPORTS_EXPORTS
+[20:47:06] found          : COMPONENTS
+[20:47:06] found          : AtomsModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : - exports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : 	- COMPONENTS
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- COMPONENTS
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/index.ts
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/molecules.module.ts
+[20:47:06] found          : IMPORTS_EXPORTS
+[20:47:06] found          : COMPONENTS
+[20:47:06] found          : MoleculesModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : - exports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : 	- COMPONENTS
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- COMPONENTS
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/organisms.module.ts
+[20:47:06] found          : IMPORTS_EXPORTS
+[20:47:06] found          : COMPONENTS
+[20:47:06] found          : OrganismsModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : - exports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : 	- COMPONENTS
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- COMPONENTS
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/templates.module.ts
+[20:47:06] found          : IMPORTS_EXPORTS
+[20:47:06] found          : COMPONENTS
+[20:47:06] found          : TemplatesModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : - exports:
+[20:47:06]                : 	- IMPORTS_EXPORTS
+[20:47:06]                : 	- COMPONENTS
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- COMPONENTS
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/events/models/events.interface.ts
+[20:47:06] found          : IncomingEvents
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/header/models/navigation-item.interface.ts
+[20:47:06] found          : NavigationItem
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/formatted-translate.directive.ts
+[20:47:06] found          : FormattedTranslateDirective
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/i18n.module.ts
+[20:47:06] found          : I18nModule
+[20:47:06]                : - imports:
+[20:47:06]                : 	- TranslateModule
+[20:47:06]                : - exports:
+[20:47:06]                : 	- TranslateModule
+[20:47:06]                : 	- FormattedTranslateDirective
+[20:47:06]                : - declarations:
+[20:47:06]                : 	- FormattedTranslateDirective
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.component.ts
+[20:47:06] found          : TitleComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/title/title.stories.ts
+[20:47:06] found          : template
+[20:47:06] found          : Title
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/Header.stories.ts
+[20:47:06] found          : Template
+[20:47:06] found          : Header
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/organisms/header/header.component.ts
+[20:47:06] found          : OrganismsHeaderComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.component.ts
+[20:47:06] found          : NavigationBarComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/molecules/navigation-bar/navigation-bar.stories.ts
+[20:47:06] found          : template
+[20:47:06] found          : NavigatinBar
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.component.ts
+[20:47:06] found          : TemplateHomePageComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/templates/home-page/home-page.stories.ts
+[20:47:06] found          : Template
+[20:47:06] found          : HomePage
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/Button.stories.ts
+[20:47:06] found          : Template
+[20:47:06] found          : Primary
+[20:47:06] found          : Secondary
+[20:47:06] found          : Large
+[20:47:06] found          : Small
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/button/button.component.ts
+[20:47:06] found          : ButtonComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.component.ts
+[20:47:06] found          : LinkButtonComponent
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/buttons/link-button/link-button.stories.ts
+[20:47:06] found          : template
+[20:47:06] found          : PrimaryLink
+[20:47:06] found          : SecondaryLink
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.stories.ts
+[20:47:06] found          : template
+[20:47:06] found          : PrimaryLink
+[20:47:06] parsing        : /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/links/link/link.component.ts
+[20:47:06] found          : LinkComponent
+[20:47:06] -------------------
+[20:47:06] Project statistics 
+[20:47:06] - files      : 432
+[20:47:06] - module     : 20
+[20:47:06] - component  : 15
+[20:47:06] - directive  : 1
+[20:47:06] - interface  : 3
+[20:47:06] -------------------
+[20:47:06] Prepare components
+[20:47:06]  AboutUsComponent has a templateUrl, include it
+[20:47:06]  AboutUsComponent has styleUrls, include them
+[20:47:06]  AppComponent has a templateUrl, include it
+[20:47:06]  AppComponent has styleUrls, include them
+[20:47:06]  ButtonComponent has a templateUrl, include it
+[20:47:06]  ButtonComponent has styleUrls, include them
+[20:47:06]  ContactUsComponent has a templateUrl, include it
+[20:47:06]  ContactUsComponent has styleUrls, include them
+[20:47:06]  EventsComponent has a templateUrl, include it
+[20:47:06]  EventsComponent has styleUrls, include them
+[20:47:06]  FooterComponent has a templateUrl, include it
+[20:47:06]  FooterComponent has styleUrls, include them
+[20:47:06]  HeaderComponent has a templateUrl, include it
+[20:47:06]  HeaderComponent has styleUrls, include them
+[20:47:06]  HomeComponent has a templateUrl, include it
+[20:47:06]  HomeComponent has styleUrls, include them
+[20:47:06]  LinkButtonComponent has a templateUrl, include it
+[20:47:06]  LinkButtonComponent has styleUrls, include them
+[20:47:06]  LinkComponent has a templateUrl, include it
+[20:47:06]  LinkComponent has styleUrls, include them
+[20:47:06]  NavigationBarComponent has a templateUrl, include it
+[20:47:06]  NavigationBarComponent has styleUrls, include them
+[20:47:06]  OrganismsHeaderComponent has a templateUrl, include it
+[20:47:06]  OrganismsHeaderComponent has styleUrls, include them
+[20:47:06]  PartnersComponent has a templateUrl, include it
+[20:47:06]  PartnersComponent has styleUrls, include them
+[20:47:06]  TemplateHomePageComponent has a templateUrl, include it
+[20:47:06]  TemplateHomePageComponent has styleUrls, include them
+[20:47:06]  TitleComponent has a templateUrl, include it
+[20:47:06]  TitleComponent has styleUrls, include them
+[20:47:06] Prepare modules
+[20:47:06] Prepare directives
+[20:47:06] Prepare interfaces
+[20:47:06] Prepare miscellaneous
+[20:47:06] Process documentation coverage report
+[20:47:06] Generating documentation in export format json
+[20:47:06] Documentation generated in ./ in 2.486 seconds
 info @storybook/angular v6.5.13
 info 
-info => Cleaning outputDir: /var/folders/8b/_3mbxmx11kj2xbnj80dxvgb80000gp/T/chromatic--67756-qqxrW4WBOcWh
+info => Cleaning outputDir: /var/folders/8b/_3mbxmx11kj2xbnj80dxvgb80000gp/T/chromatic--32189-4286NOvs885n
 info => Loading presets
 info => Compiling manager..
 info => Compiling preview..
-(node:67782) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /Users/mihaly.csordas/www2/hydrasquad/node_modules/tslib/package.json.
+(node:32209) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /Users/mihaly.csordas/www2/hydrasquad/node_modules/tslib/package.json.
 Update this package.json to use a subpath pattern like "./*".
 (Use `node --trace-deprecation ...` to show where the warning was created)
 info Addon-docs: using MDX1
@@ -786,41 +956,38 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building 0/18 entries 2/18 dependencies 0/2 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
-<s> [webpack.Progress] 10% building 0/18 entries 13/20 dependencies 0/13 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@ngtools/webpack/src/ivy/index.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 10% building 0/18 entries 13/20 dependencies 0/13 modules
-<s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/mdx1-csf/loader.js
-<s> [webpack.Progress] 10% building 0/18 entries 103/164 dependencies 1/61 modules
-<s> [webpack.Progress] 13% building 1/18 entries 133/169 dependencies 3/87 modules
+<s> [webpack.Progress] 13% building 1/18 entries 104/169 dependencies 3/63 modules
+<s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/mdx1-csf/loader.js
+<s> [webpack.Progress] 13% building 1/18 entries 110/169 dependencies 3/68 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 13% building 1/18 entries 152/171 dependencies 3/96 modules
-<s> [webpack.Progress] 16% building 2/18 entries 385/469 dependencies 29/181 modules
-<s> [webpack.Progress] 16% building 2/18 entries 900/1019 dependencies 77/306 modules
-<s> [webpack.Progress] 16% building 2/18 entries 1231/1300 dependencies 116/406 modules
-<s> [webpack.Progress] 16% building 2/18 entries 1400/1962 dependencies 148/438 modules
-<s> [webpack.Progress] 19% building 3/18 entries 2065/2381 dependencies 274/621 modules
-<s> [webpack.Progress] 19% building 3/18 entries 3000/3223 dependencies 354/728 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3204/3228 dependencies 398/752 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3500/3676 dependencies 560/801 modules
-<s> [webpack.Progress] 22% building 4/18 entries 3856/3949 dependencies 673/900 modules
-<s> [webpack.Progress] 22% building 4/18 entries 4500/4541 dependencies 801/1069 modules
-<s> [webpack.Progress] 25% building 5/18 entries 4656/4669 dependencies 817/1128 modules
-<s> [webpack.Progress] 25% building 5/18 entries 5400/5447 dependencies 1077/1376 modules
-<s> [webpack.Progress] 28% building 6/18 entries 5759/5796 dependencies 1313/1456 modules
-<s> [webpack.Progress] 31% building 7/18 entries 5759/5796 dependencies 1314/1456 modules
-<s> [webpack.Progress] 34% building 8/18 entries 5759/5796 dependencies 1315/1456 modules
-<s> [webpack.Progress] 37% building 9/18 entries 5759/5796 dependencies 1316/1456 modules
-<s> [webpack.Progress] 40% building 10/18 entries 5759/5796 dependencies 1317/1456 modules
-<s> [webpack.Progress] 43% building 11/18 entries 5759/5796 dependencies 1318/1456 modules
-<s> [webpack.Progress] 46% building 12/18 entries 5759/5796 dependencies 1319/1456 modules
-<s> [webpack.Progress] 49% building 13/18 entries 5759/5796 dependencies 1320/1456 modules
-<s> [webpack.Progress] 52% building 14/18 entries 5803/5842 dependencies 1357/1456 modules
-<s> [webpack.Progress] 52% building 14/18 entries 5858/5900 dependencies 1376/1478 modules
-<s> [webpack.Progress] 55% building 15/18 entries 6003/6019 dependencies 1432/1501 modules
-<s> [webpack.Progress] 58% building 16/18 entries 6126/6128 dependencies 1503/1535 modules
-<s> [webpack.Progress] 61% building 17/18 entries 6160/6160 dependencies 1532/1543 modules
-<s> [webpack.Progress] 65% building 18/18 entries 6161/6161 dependencies 1543/1543 modules
+<s> [webpack.Progress] 13% building 1/18 entries 214/300 dependencies 12/112 modules
+<s> [webpack.Progress] 16% building 2/18 entries 394/515 dependencies 38/186 modules
+<s> [webpack.Progress] 16% building 2/18 entries 800/1071 dependencies 66/308 modules
+<s> [webpack.Progress] 16% building import loader ./node_modules/@ngtools/webpack/src/loaders/direct-resource.js
+<s> [webpack.Progress] 16% building 2/18 entries 1159/1227 dependencies 96/400 modules
+<s> [webpack.Progress] 16% building 2/18 entries 1300/1968 dependencies 118/488 modules
+<s> [webpack.Progress] 19% building 3/18 entries 2201/2430 dependencies 283/634 modules
+<s> [webpack.Progress] 22% building 4/18 entries 3278/3285 dependencies 400/781 modules
+<s> [webpack.Progress] 22% building 4/18 entries 3700/3760 dependencies 633/846 modules
+<s> [webpack.Progress] 22% building 4/18 entries 4600/4684 dependencies 858/1051 modules
+<s> [webpack.Progress] 25% building 5/18 entries 4909/4928 dependencies 958/1135 modules
+<s> [webpack.Progress] 28% building 6/18 entries 5580/5591 dependencies 1143/1268 modules
+<s> [webpack.Progress] 31% building 7/18 entries 5580/5591 dependencies 1144/1268 modules
+<s> [webpack.Progress] 34% building 8/18 entries 5580/5591 dependencies 1145/1268 modules
+<s> [webpack.Progress] 37% building 9/18 entries 5580/5591 dependencies 1146/1268 modules
+<s> [webpack.Progress] 40% building 10/18 entries 5580/5591 dependencies 1147/1268 modules
+<s> [webpack.Progress] 43% building 11/18 entries 5580/5591 dependencies 1148/1268 modules
+<s> [webpack.Progress] 46% building 12/18 entries 5580/5591 dependencies 1149/1268 modules
+<s> [webpack.Progress] 49% building 13/18 entries 5580/5591 dependencies 1150/1268 modules
+<s> [webpack.Progress] 52% building 14/18 entries 5580/5591 dependencies 1170/1268 modules
+<s> [webpack.Progress] 52% building 14/18 entries 5683/5700 dependencies 1195/1287 modules
+<s> [webpack.Progress] 55% building 15/18 entries 5731/5744 dependencies 1219/1290 modules
+<s> [webpack.Progress] 58% building 16/18 entries 5820/5826 dependencies 1296/1311 modules
+<s> [webpack.Progress] 61% building 17/18 entries 5828/5828 dependencies 1316/1316 modules
+<s> [webpack.Progress] 64% building 18/18 entries 5828/5828 dependencies 1316/1316 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
 <s> [webpack.Progress] 69% building finish
@@ -921,13 +1088,13 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
-info => Manager built (18 s)
+info => Manager built (16 s)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.336b4d1b.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.336b4d1b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.264805b3.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.264805b3.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.a3d37edd.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.a3d37edd.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 172.dc450dee.iframe.bundle.js generate SourceMap
@@ -946,11 +1113,11 @@ info => Manager built (18 s)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 737.30a8e691.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 461.f4434f56.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 461.f4434f56.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 878.4f0f7cfb.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 878.4f0f7cfb.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 973.1328f303.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 973.1328f303.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 878.4f0f7cfb.iframe.bundle.js attach SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 878.4f0f7cfb.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 973.1328f303.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 973.1328f303.iframe.bundle.js attached SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
@@ -961,8 +1128,8 @@ info => Manager built (18 s)
 <s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.bb952d42.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.bb952d42.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.0bfe20e2.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.0bfe20e2.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.1d0566b8.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.1d0566b8.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 172.0c5d437d.iframe.bundle.js generate SourceMap
@@ -1007,14 +1174,12 @@ info => Manager built (18 s)
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (23 s)
+info => Preview built (22 s)
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us-routing.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.component.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/about-us/about-us.module.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/app-paths.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
@@ -1036,13 +1201,11 @@ WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.component.ts is
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/events/events.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/events/models/events.interface.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.component.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/footer/footer.module.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.component.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/header/header.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/home/home-routing.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
@@ -1058,22 +1221,6 @@ WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.component.t
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/partners/partners.module.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/contentful/contentful.service.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/events/model/incoming-events.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/formatted-translate.directive.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/i18n/i18n.module.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/navigation-item/model/navigation-item.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/services/page-title/title-service.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.component.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
-WARN /Users/mihaly.csordas/www2/hydrasquad/src/app/title-section/title-section.module.ts is part of the TypeScript compilation but it's unused.
-WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.prod.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/environments/environment.ts is part of the TypeScript compilation but it's unused.
@@ -1081,6 +1228,10 @@ WARN Add only entry points to the 'files' or 'include' properties in your tsconf
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/main.server.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN /Users/mihaly.csordas/www2/hydrasquad/src/main.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/mihaly.csordas/www2/hydrasquad/src/stories/User.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/mihaly.csordas/www2/hydrasquad/src/stories/atoms/index.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
@@ -1097,17 +1248,17 @@ WARN   assets/img/events/operation-thunder.png (363 KiB)
 WARN   assets/img/events/terminator_savation_event.jpeg (626 KiB)
 WARN   assets/img/events/zona-maraton.png (364 KiB)
 WARN   842.8501d649.iframe.bundle.js (790 KiB)
-WARN   878.7e31db50.iframe.bundle.js (3.75 MiB)
+WARN   973.9f72ae80.iframe.bundle.js (3.49 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
-WARN   main (4.17 MiB)
+WARN   main (3.93 MiB)
 WARN       runtime~main.1d0566b8.iframe.bundle.js
-WARN       878.7e31db50.iframe.bundle.js
+WARN       973.9f72ae80.iframe.bundle.js
 WARN       main.css
-WARN       main.bb952d42.iframe.bundle.js
+WARN       main.0bfe20e2.iframe.bundle.js
 WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/8b/_3mbxmx11kj2xbnj80dxvgb80000gp/T/chromatic--67756-qqxrW4WBOcWh
+info => Output directory: /var/folders/8b/_3mbxmx11kj2xbnj80dxvgb80000gp/T/chromatic--32189-4286NOvs885n

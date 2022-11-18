@@ -2,6 +2,38 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "ImageInterface",
+            "id": "interface-ImageInterface-1f7044eb6523c1cf94594c7d28a6d1e20ee6ee84a6e48f9cbee28dfb9524e4603cd01af2ce40a2ed3fe8e47f508f921010af1833ef6d71b5b1c9cc6495089fb0",
+            "file": "src/app/header/models/image.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ImageInterface{\n    url: string,\n    alt: string\n}\n",
+            "properties": [
+                {
+                    "name": "alt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "url",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
             "name": "IncomingEvents",
             "id": "interface-IncomingEvents-91193484ea7e75ff773361d3e38841dbceea09429476f57db7dffbde07aca96fff4810dd020360359981c0d33b42e49aca83c02ee0e16344fbc61aad77e3316f",
             "file": "src/app/events/models/events.interface.ts",
@@ -800,7 +832,131 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-home-page [listItems]=\"listItems\"></app-home-page>\n"
+            "templateData": "<app-home-page [listItems]=\"listItems\" titleText=\"Home page\" titleDescription=\"Lorem ipsum dolor sit amet\"></app-home-page>\n"
+        },
+        {
+            "name": "ImageBlockComponent",
+            "id": "component-ImageBlockComponent-ce9e391f586f453cf818d854326ece05fbe4b38b7d7865837a0304267f9fee8f212def2ed93277f0d5e5e910ff18bedcc9467d5bba24ef0e7d381258967da0b3",
+            "file": "src/stories/atoms/image-block/image-block.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-image-block",
+            "styleUrls": [
+                "./image-block.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./image-block.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "imageAlt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imageHeight",
+                    "defaultValue": "500",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "imagePath",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imageWidth",
+                    "defaultValue": "500",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\n\n@Component({\n    selector: 'storybook-image-block',\n    templateUrl: './image-block.component.html',\n    styleUrls: ['./image-block.component.scss'],\n})\nexport class ImageBlockComponent {\n    @Input()\n    imagePath: string;\n\n    @Input()\n    imageAlt: string;\n\n    @Input()\n    imageHeight: number = 500;\n\n    @Input()\n    imageWidth: number = 500;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./image-block.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<figure>\n    <img [width]=\"imageWidth\" [height]=\"imageHeight\" [src]=\"imagePath\" [alt]=\"imageAlt\">\n</figure>\n"
+        },
+        {
+            "name": "ImageGalleryComponent",
+            "id": "component-ImageGalleryComponent-64b74c7818e188c04971223bcd3b4632c6c12822075ee5a61104aef95b3488767ab8453263df262f2db279d48a3194ef405c74f52e7f237a0202d98b02743939",
+            "file": "src/stories/molecules/image-gallery/image-gallery.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-image-gallery",
+            "styleUrls": [
+                "./image-gallery.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./image-gallery.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "imageGallery",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "Array<ImageInterface>",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {ImageInterface} from \"@app/header/models/image.interface\";\n\n@Component({\n    selector: 'storybook-image-gallery',\n    templateUrl: './image-gallery.component.html',\n    styleUrls: ['./image-gallery.component.scss'],\n})\nexport class ImageGalleryComponent {\n    @Input() imageGallery: Array<ImageInterface>;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".image-gallery{\n    display: grid;\n    gap: 30px;\n    grid-template-columns: 1fr 1fr 1fr;\n}\n",
+                    "styleUrl": "./image-gallery.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<ul>\n    <ng-container *ngFor=\"let image of imageGallery, let i=index\">\n        <li class=\"col-lg-3 col-md-4 col-sm-6 col-12\">\n            <storybook-image-block [imagePath]=\"image.url\" [imageAlt]=\"image.alt\"></storybook-image-block>\n        </li>\n    </ng-container>\n</ul>\n"
         },
         {
             "name": "LinkButtonComponent",
@@ -1253,7 +1409,7 @@
         },
         {
             "name": "TemplateHomePageComponent",
-            "id": "component-TemplateHomePageComponent-4646866f408b67635666eaa10b01d143c19a4a0a7983dc2f8a5c63a9b2fc8dca66ca2fd599509e365e5cab2ef630d8529ffdd9043e5a7fd0b04be273c0b89fec",
+            "id": "component-TemplateHomePageComponent-e879af7f18a8feed2e96e3cf93ef8d8bbfd05cadc2a58575ee5cac485beab865fabd3ff571521e5351d2ff1ab645e47c9b1c1d3ca1a053edaf8d7cf92c18e4dd",
             "file": "src/stories/templates/home-page/home-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1271,11 +1427,35 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "imageGallery",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "Array<ImageInterface>",
+                    "decorators": []
+                },
+                {
                     "name": "listItems",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 10,
+                    "line": 11,
                     "type": "Array<NavigationItem>",
+                    "decorators": []
+                },
+                {
+                    "name": "titleDescription",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "titleText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
                     "decorators": []
                 }
             ],
@@ -1289,7 +1469,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'app-home-page',\n    templateUrl: './home-page.component.html',\n    styleUrls: ['./home-page.component.scss'],\n})\nexport default class TemplateHomePageComponent {\n    @Input() listItems: Array<NavigationItem>;\n}\n",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\nimport {ImageInterface} from \"@app/header/models/image.interface\";\n\n@Component({\n    selector: 'app-home-page',\n    templateUrl: './home-page.component.html',\n    styleUrls: ['./home-page.component.scss'],\n})\nexport default class TemplateHomePageComponent {\n    @Input() listItems: Array<NavigationItem>;\n    @Input() imageGallery: Array<ImageInterface>;\n\n    @Input()\n    titleText: string;\n\n    @Input()\n    titleDescription: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1298,7 +1478,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<storybook-header [listItems]=\"listItems\"></storybook-header>\n<app-title titleText=\"Homepage\" titleDescription=\"This is the home page\"></app-title>\n"
+            "templateData": "<storybook-header [listItems]=\"listItems\"></storybook-header>\n<app-title [titleText]=\"titleText\" [titleDescription]=\"titleDescription\"></app-title>\n<div class=\"container\">\n    <storybook-image-gallery [imageGallery]=\"imageGallery\"></storybook-image-gallery>\n</div>\n"
         },
         {
             "name": "TitleComponent",
@@ -1600,13 +1780,13 @@
         },
         {
             "name": "AtomsModule",
-            "id": "module-AtomsModule-b3d361d330c72c7ba9b6839d77a4bd3868a420853791cd40372dc2c6048911098d6c47e02b501ac3f2e0d553a0d2ad7c822b163371376c1d4498ec28f893d4b4",
+            "id": "module-AtomsModule-370373a6898e3a3c22ba29c10e1c7d79f32c2b32c4e029ddc4b49cd4920b1b71c6abe060805202626c9a35245a7f0169392ea2ceee17865796e515e5dfa604ae",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/atoms/atoms.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport ButtonComponent from \"@atoms/buttons/button/button.component\";\nimport {LinkButtonComponent} from \"@atoms/buttons/link-button/link-button.component\";\nimport {LinkComponent} from \"@atoms/links/link/link.component\";\nimport {TitleComponent} from \"@atoms/title/title.component\";\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];\n\nconst COMPONENTS = [\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n];\n\n@NgModule({\n    imports: [...IMPORTS_EXPORTS],\n    declarations: [...COMPONENTS],\n    exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n    schemas: [NO_ERRORS_SCHEMA],\n})\nexport class AtomsModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport ButtonComponent from \"@atoms/buttons/button/button.component\";\nimport {LinkButtonComponent} from \"@atoms/buttons/link-button/link-button.component\";\nimport {LinkComponent} from \"@atoms/links/link/link.component\";\nimport {TitleComponent} from \"@atoms/title/title.component\";\nimport {ImageBlockComponent} from \"@atoms/image-block/image-block.component\";\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];\n\nconst COMPONENTS = [\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n];\n\n@NgModule({\n    imports: [...IMPORTS_EXPORTS],\n    declarations: [...COMPONENTS],\n    exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n    schemas: [NO_ERRORS_SCHEMA],\n})\nexport class AtomsModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1617,6 +1797,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -1638,6 +1821,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -2065,13 +2251,13 @@
         },
         {
             "name": "MoleculesModule",
-            "id": "module-MoleculesModule-aece46991b889d75a0e409f1189ca864c37e26a2c7fc4f0bfe23482146bd8272090aa4883ad1f14a42c04ab954ffbb98914271b5a3a725d4db15f4f359f33e71",
+            "id": "module-MoleculesModule-07d38a84e564374df586af51b56209ffe229f87f193476cc78a59d50843f5ede5b832c7b24fb27659f3d3c2475698ca6ef4d6c2ad6010f4004b95482cdb23245",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/molecules/molecules.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {NavigationBarComponent} from \"@molecules/navigation-bar/navigation-bar.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule, AtomsModule];\n\nconst COMPONENTS = [\n    NavigationBarComponent\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class MoleculesModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {NavigationBarComponent} from \"@molecules/navigation-bar/navigation-bar.component\";\nimport {ImageGalleryComponent} from \"@molecules/image-gallery/image-gallery.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule, AtomsModule];\n\nconst COMPONENTS = [\n    NavigationBarComponent,\n    ImageGalleryComponent\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class MoleculesModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -2082,6 +2268,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -2103,6 +2292,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -2146,6 +2338,9 @@
                             "name": "ButtonComponent"
                         },
                         {
+                            "name": "ImageBlockComponent"
+                        },
+                        {
                             "name": "LinkButtonComponent"
                         },
                         {
@@ -2165,6 +2360,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -2295,6 +2493,9 @@
                             "name": "ButtonComponent"
                         },
                         {
+                            "name": "ImageBlockComponent"
+                        },
+                        {
                             "name": "LinkButtonComponent"
                         },
                         {
@@ -2314,6 +2515,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ImageBlockComponent"
                         },
                         {
                             "name": "LinkButtonComponent"
@@ -2356,7 +2560,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n]"
+                "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n]"
             },
             {
                 "name": "COMPONENTS",
@@ -2366,7 +2570,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n    NavigationBarComponent\n]"
+                "defaultValue": "[\n    NavigationBarComponent,\n    ImageGalleryComponent\n]"
             },
             {
                 "name": "COMPONENTS",
@@ -2419,6 +2623,16 @@
                 "defaultValue": "{\n    production: false\n}"
             },
             {
+                "name": "FinalHomePage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/pages/final-home-page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Header",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2437,6 +2651,26 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ImageBlock",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
+            },
+            {
+                "name": "ImageBlock",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
             },
             {
                 "name": "IMPORTS_EXPORTS",
@@ -2542,7 +2776,7 @@
                 "name": "PrimaryLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "file": "src/stories/atoms/links/link/link.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2552,7 +2786,7 @@
                 "name": "PrimaryLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2611,11 +2845,41 @@
                 "name": "template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ImageGalleryComponent>",
+                "defaultValue": "(args: ImageGalleryComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/molecules/navigation-bar/navigation-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<NavigationBarComponent>",
                 "defaultValue": "(args: NavigationBarComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ImageBlockComponent>",
+                "defaultValue": "(args: ImageBlockComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LinkComponent>",
+                "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "template",
@@ -2628,14 +2892,14 @@
                 "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
             },
             {
-                "name": "template",
+                "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "file": "src/stories/pages/final-home-page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<LinkComponent>",
-                "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+                "type": "Story<HomeComponent>",
+                "defaultValue": "(args: HomeComponent) => ({\n    props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2654,8 +2918,8 @@
                 "file": "src/stories/templates/home-page/home-page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<HomePageComponent>",
-                "defaultValue": "(args: HomePageComponent) => ({\n    props: args,\n})"
+                "type": "Story<TemplateHomePageComponent>",
+                "defaultValue": "(args: TemplateHomePageComponent) => ({\n    props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2819,7 +3083,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent\n]"
+                    "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n]"
                 },
                 {
                     "name": "IMPORTS_EXPORTS",
@@ -2841,7 +3105,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n    NavigationBarComponent\n]"
+                    "defaultValue": "[\n    NavigationBarComponent,\n    ImageGalleryComponent\n]"
                 },
                 {
                     "name": "IMPORTS_EXPORTS",
@@ -2943,6 +3207,28 @@
                     "defaultValue": "{\n    production: false\n}"
                 }
             ],
+            "src/stories/pages/final-home-page.stories.ts": [
+                {
+                    "name": "FinalHomePage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/final-home-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/final-home-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<HomeComponent>",
+                    "defaultValue": "(args: HomeComponent) => ({\n    props: args,\n})"
+                }
+            ],
             "src/stories/organisms/header/Header.stories.ts": [
                 {
                     "name": "Header",
@@ -2983,8 +3269,52 @@
                     "file": "src/stories/templates/home-page/home-page.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<HomePageComponent>",
-                    "defaultValue": "(args: HomePageComponent) => ({\n    props: args,\n})"
+                    "type": "Story<TemplateHomePageComponent>",
+                    "defaultValue": "(args: TemplateHomePageComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/molecules/image-gallery/image-gallery.stories.ts": [
+                {
+                    "name": "ImageBlock",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ImageGalleryComponent>",
+                    "defaultValue": "(args: ImageGalleryComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/image-block/image-block.stories.ts": [
+                {
+                    "name": "ImageBlock",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ImageBlockComponent>",
+                    "defaultValue": "(args: ImageBlockComponent) => ({\n    props: args,\n})"
                 }
             ],
             "src/stories/atoms/buttons/button/Button.stories.ts": [
@@ -3073,6 +3403,28 @@
                     "defaultValue": "{\n\n    home: {\n        main: 'home',\n    },\n\n    about_us: {\n        main: 'about-us',\n    },\n\n    partners: {\n        main: 'partnerek',\n    },\n\n    events: {\n        main: 'esemenyek',\n    },\n\n    contact: {\n        main: 'kapcsolat',\n    }\n}"
                 }
             ],
+            "src/stories/atoms/links/link/link.stories.ts": [
+                {
+                    "name": "PrimaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LinkComponent>",
+                    "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/stories/atoms/buttons/link-button/link-button.stories.ts": [
                 {
                     "name": "PrimaryLink",
@@ -3103,28 +3455,6 @@
                     "deprecationMessage": "",
                     "type": "Story<LinkButtonComponent>",
                     "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
-                }
-            ],
-            "src/stories/atoms/links/link/link.stories.ts": [
-                {
-                    "name": "PrimaryLink",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/atoms/links/link/link.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "template.bind({})"
-                },
-                {
-                    "name": "template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/atoms/links/link/link.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<LinkComponent>",
-                    "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/atoms/title/title.stories.ts": [
@@ -3398,6 +3728,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/header/models/image.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ImageInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/header/models/navigation-item.interface.ts",
                 "type": "interface",
                 "linktype": "interface",
@@ -3581,6 +3920,35 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/atoms/image-block/image-block.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImageBlockComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/image-block/image-block.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ImageBlock",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/image-block/image-block.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/atoms/links/link/link.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -3634,6 +4002,35 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Title",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/image-gallery/image-gallery.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImageGalleryComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ImageBlock",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3737,12 +4134,32 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/pages/final-home-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FinalHomePage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/pages/final-home-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/templates/home-page/home-page.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TemplateHomePageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
