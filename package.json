@@ -14,8 +14,7 @@
     "prerender": "ng run hydrasquad:prerender",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook",
-      "chromatic": "chromatic --build-script-name=build-storybook --exit-zero-on-changes"
+    "build-storybook": "npm run docs:json && build-storybook --build-script-name"
   },
   "private": true,
   "dependencies": {
