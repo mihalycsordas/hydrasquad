@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {AboutUsComponent} from './about-us.component';
-import {AtomsModule} from "@atoms/atoms.module";
 import {AboutUsRoutingModule} from "@app/about-us/about-us-routing.module";
+import {TemplatesModule} from "../../stories/templates/templates.module";
 
 @NgModule({
     imports: [
         CommonModule,
-        AtomsModule,
-        AboutUsRoutingModule
+        AboutUsRoutingModule,
+        TemplatesModule
     ],
     exports: [
         AboutUsComponent

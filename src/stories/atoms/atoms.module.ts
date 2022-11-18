@@ -7,6 +7,7 @@ import {LinkButtonComponent} from "@atoms/buttons/link-button/link-button.compon
 import {LinkComponent} from "@atoms/links/link/link.component";
 import {TitleComponent} from "@atoms/title/title.component";
 import {ImageBlockComponent} from "@atoms/image-block/image-block.component";
+import {ParagraphComponent} from "@atoms/paragraph/paragraph.component";
 const IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];
 
 const COMPONENTS = [
@@ -14,7 +15,8 @@ const COMPONENTS = [
     LinkButtonComponent,
     LinkComponent,
     TitleComponent,
-    ImageBlockComponent
+    ImageBlockComponent,
+    ParagraphComponent
 ];
 
 @NgModule({
