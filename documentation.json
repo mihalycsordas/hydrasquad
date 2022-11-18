@@ -303,7 +303,7 @@
     "components": [
         {
             "name": "AboutUsComponent",
-            "id": "component-AboutUsComponent-85cc0ec62c00dff418fd027f2213b279938e6c4245f4951bbc89992ffe61920536026412ce2255bdce587c8c847bea796e9dbd01a88c0cbd664dbb54d83e8884",
+            "id": "component-AboutUsComponent-0449be1eb729019a839145d6d77ac4f989d77b3e9872ae37d7bacfd538db265154ecac4954038e0d3f724d44737a1f25afeda9d2e7f64b6313ebe483e91b8039",
             "file": "src/app/about-us/about-us.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -321,6 +321,98 @@
             "viewProviders": [],
             "inputsClass": [],
             "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "listItems",
+                    "defaultValue": "[\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        },\n    ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<NavigationItem>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\nimport {PATHS} from \"@app/app-paths\";\n\n@Component({\n    selector: 'app-about-us',\n    templateUrl: './about-us.component.html',\n    styleUrls: ['./about-us.component.scss']\n})\nexport class AboutUsComponent {\n    listItems: Array<NavigationItem> = [\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        },\n    ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./about-us.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-about-us-page\n    [listItems]=\"listItems\"\n    titleText=\"About Us\"\n    titleDescription=\"This is the About us page\"\n    image=\"assets/img/hydra_group_image.jpeg\"\n    content=\"It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English. Many desktop\n            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for\n            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the\n            years, sometimes by accident, sometimes on purpose (injected humour and the like).\"\n></app-about-us-page>\n"
+        },
+        {
+            "name": "AboutUsPageComponent",
+            "id": "component-AboutUsPageComponent-6d55017126b673586a0a54d054387033d238f807d056ef8bf5658d77db7fd0f5e82c6435033890ca1ada6b71953050fbd5fb9e89e0a25ec2f74efbd2b632051c",
+            "file": "src/stories/templates/about-us-page/about-us-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-about-us-page",
+            "styleUrls": [
+                "./about-us-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./about-us-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "content",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "image",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "listItems",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "Array<NavigationItem>",
+                    "decorators": []
+                },
+                {
+                    "name": "titleDescription",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "titleText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
             "deprecated": false,
@@ -330,16 +422,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component} from '@angular/core';\n\n@Component({\n    selector: 'app-about-us',\n    templateUrl: './about-us.component.html',\n    styleUrls: ['./about-us.component.scss']\n})\nexport class AboutUsComponent {\n}\n",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\n\n@Component({\n    selector: 'app-about-us-page',\n    templateUrl: './about-us-page.component.html',\n    styleUrls: ['./about-us-page.component.scss'],\n})\nexport default class AboutUsPageComponent {\n    @Input() listItems: Array<NavigationItem>;\n\n    @Input()\n    titleText: string;\n\n    @Input()\n    titleDescription: string;\n\n    @Input()\n    content: string;\n\n    @Input()\n    image: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
                     "data": ".about-us {\n    display: inline-block;\n\n    div {\n        margin: 30px 0;\n        padding: 0 15px;\n        float: left;\n\n        picture {\n            img {\n                width: 100%;\n            }\n        }\n    }\n\n    p {\n        text-align: justify;\n    }\n}\n\n",
-                    "styleUrl": "./about-us.component.scss"
+                    "styleUrl": "./about-us-page.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-title titleText=\"Rólunk\"\n                   titleDescription=\"Valami rólunk\"></app-title>\n<div class=\"about-us\">\n    <div class=\"col-lg-6 col-md-6\">\n        <picture>\n            <img src=\"assets/img/hydra_group_image.jpeg\" loading=\"lazy\">\n        </picture>\n    </div>\n    <div class=\"col-lg-6 col-md-6\">\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English. Many desktop\n            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for\n            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the\n            years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English.</p>\n        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking\n            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\n            as opposed to using 'Content here, content here', making it look like readable English. Many desktop\n            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for\n            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the\n            years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>\n    </div>\n</div>\n"
+            "templateData": "<app-home-page\n    [listItems]=\"listItems\"\n    [titleText]=\"titleText\"\n    [titleDescription]=\"titleDescription\"\n></app-home-page>\n<div class=\"container\">\n    <div class=\"about-us\">\n        <div class=\"col-lg-6 col-md-6\">\n            <storybook-image-block [imagePath]=\"image\"></storybook-image-block>\n        </div>\n        <div class=\"col-lg-6 col-md-6\">\n            <app-paragraph [content]=\"content\"></app-paragraph>\n        </div>\n    </div>\n</div>\n"
         },
         {
             "name": "AppComponent",
@@ -785,7 +877,7 @@
         },
         {
             "name": "HomeComponent",
-            "id": "component-HomeComponent-f39998823699d7962afda37c6db098a37256a9c4edc4a4daa3c4f03888085859f08aacad7439c38847c53a24c6e643fb1598dd282c1906b8bd9147e1a6536823",
+            "id": "component-HomeComponent-35debebf14e6952dae0336d1d0ddcc0db9b4a9956e53da9820c80d29e13bec87132aa7c2986d98ee2ecb07b0d45748983b3ad3fc76e2d25423850e710a0d7098",
             "file": "src/app/home/home.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -805,14 +897,24 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "imageGallery",
+                    "defaultValue": "[\n        {\n            url: '../assets/img/events/terminator_savation_event.jpeg',\n            alt: 'ss',\n        },\n        {\n            url: '../assets/img/events/ORW.png',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/leghosszabb_nap.jpeg',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/zona-maraton.png',\n            alt: 'ss',\n        },\n        {\n            url: '../assets/img/events/3day_mosahi.png',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/leghosszabb_nap.jpeg',\n            alt: 'sss',\n        },\n    ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<ImageInterface>",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
                     "name": "listItems",
-                    "defaultValue": "[\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ]",
+                    "defaultValue": "[\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        },\n    ]",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Array<NavigationItem>",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 12
                 }
             ],
             "methodsClass": [],
@@ -823,7 +925,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component} from '@angular/core';\nimport {NavigationItem} from \"@app/header/models/navigation-item.interface\";\nimport {PATHS} from \"@app/app-paths\";\n\n@Component({\n    selector: 'app-home',\n    templateUrl: './home.component.html',\n    styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {\n    listItems: Array<NavigationItem> = [\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        }\n    ];\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { NavigationItem } from '@app/header/models/navigation-item.interface';\nimport { PATHS } from '@app/app-paths';\nimport { ImageInterface } from '@app/header/models/image.interface';\n\n@Component({\n    selector: 'app-home',\n    templateUrl: './home.component.html',\n    styleUrls: ['./home.component.scss'],\n})\nexport class HomeComponent {\n    listItems: Array<NavigationItem> = [\n        {\n            itemLabel: 'Gallery',\n            itemLink: `/${PATHS.home.main}`,\n        },\n        {\n            itemLabel: 'About us',\n            itemLink: `/${PATHS.about_us.main}`,\n        },\n        {\n            itemLabel: 'Partners',\n            itemLink: `/${PATHS.partners.main}`,\n        },\n        {\n            itemLabel: 'Events',\n            itemLink: `/${PATHS.events.main}`,\n        },\n        {\n            itemLabel: 'Contact us',\n            itemLink: `/${PATHS.contact.main}`,\n        },\n    ];\n\n    imageGallery: Array<ImageInterface> = [\n        {\n            url: '../assets/img/events/terminator_savation_event.jpeg',\n            alt: 'ss',\n        },\n        {\n            url: '../assets/img/events/ORW.png',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/leghosszabb_nap.jpeg',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/zona-maraton.png',\n            alt: 'ss',\n        },\n        {\n            url: '../assets/img/events/3day_mosahi.png',\n            alt: 'sss',\n        },\n        {\n            url: '../assets/img/events/leghosszabb_nap.jpeg',\n            alt: 'sss',\n        },\n    ];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -832,11 +934,11 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-home-page [listItems]=\"listItems\" titleText=\"Home page\" titleDescription=\"Lorem ipsum dolor sit amet\"></app-home-page>\n"
+            "templateData": "<app-home-page\n    [listItems]=\"listItems\"\n    [imageGallery]=\"imageGallery\"\n    titleText=\"Welcome\"\n    titleDescription=\"This is the Hydra Airsoft Squad website\"\n></app-home-page>\n"
         },
         {
             "name": "ImageBlockComponent",
-            "id": "component-ImageBlockComponent-ce9e391f586f453cf818d854326ece05fbe4b38b7d7865837a0304267f9fee8f212def2ed93277f0d5e5e910ff18bedcc9467d5bba24ef0e7d381258967da0b3",
+            "id": "component-ImageBlockComponent-2c9ce68ecb30954dd667783809b91d8694b57622214538b78f50ecf18dc2940e0666851f17905f4ef633d31c19db7f6eb92a5a0ac198ed15b38170463ae7551f",
             "file": "src/stories/atoms/image-block/image-block.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -862,29 +964,11 @@
                     "decorators": []
                 },
                 {
-                    "name": "imageHeight",
-                    "defaultValue": "500",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 16,
-                    "type": "number",
-                    "decorators": []
-                },
-                {
                     "name": "imagePath",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 10,
                     "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "imageWidth",
-                    "defaultValue": "500",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 19,
-                    "type": "number",
                     "decorators": []
                 }
             ],
@@ -898,16 +982,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input} from \"@angular/core\";\n\n@Component({\n    selector: 'storybook-image-block',\n    templateUrl: './image-block.component.html',\n    styleUrls: ['./image-block.component.scss'],\n})\nexport class ImageBlockComponent {\n    @Input()\n    imagePath: string;\n\n    @Input()\n    imageAlt: string;\n\n    @Input()\n    imageHeight: number = 500;\n\n    @Input()\n    imageWidth: number = 500;\n}\n",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\n\n@Component({\n    selector: 'storybook-image-block',\n    templateUrl: './image-block.component.html',\n    styleUrls: ['./image-block.component.scss'],\n})\nexport class ImageBlockComponent {\n    @Input()\n    imagePath: string;\n\n    @Input()\n    imageAlt: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": "figure{\n    height: 100%;\n    max-height: 285px;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n}\n\n",
                     "styleUrl": "./image-block.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<figure>\n    <img [width]=\"imageWidth\" [height]=\"imageHeight\" [src]=\"imagePath\" [alt]=\"imageAlt\">\n</figure>\n"
+            "templateData": "<figure>\n    <img [src]=\"imagePath\" [alt]=\"imageAlt\">\n</figure>\n"
         },
         {
             "name": "ImageGalleryComponent",
@@ -951,12 +1035,12 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".image-gallery{\n    display: grid;\n    gap: 30px;\n    grid-template-columns: 1fr 1fr 1fr;\n}\n",
+                    "data": ".image-gallery{\n    padding: 40px;\n    display: grid;\n    gap: 30px;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n\n\n    img{\n        width: 100%;\n        height: 100%;\n    }\n}\n@media only screen and (max-width: 768px) {\n    .image-gallery {\n        padding: 0;\n        grid-template-columns: 1fr;\n    }\n}\n",
                     "styleUrl": "./image-gallery.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<ul>\n    <ng-container *ngFor=\"let image of imageGallery, let i=index\">\n        <li class=\"col-lg-3 col-md-4 col-sm-6 col-12\">\n            <storybook-image-block [imagePath]=\"image.url\" [imageAlt]=\"image.alt\"></storybook-image-block>\n        </li>\n    </ng-container>\n</ul>\n"
+            "templateData": "<div class=\"image-gallery\">\n    <ng-container *ngFor=\"let image of imageGallery; let i = index\">\n        <storybook-image-block\n            [imagePath]=\"image.url\"\n            [imageAlt]=\"image.alt\"\n        ></storybook-image-block\n    ></ng-container>\n</div>\n"
         },
         {
             "name": "LinkButtonComponent",
@@ -1311,7 +1395,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "nav{\n    display: flex;\n    height: 150px;\n    justify-content: center;\n    flex-direction: column;\n    ul{\n        gap: 30px;\n        padding: 0;\n        display: flex;\n        margin: 0 0 0 10px;\n        li{\n            list-style-type: none;\n        }\n    }\n}\n",
+                    "data": "\nnav{\n    display: flex;\n    height: 150px;\n    justify-content: center;\n    flex-direction: column;\n    ul{\n        gap: 30px;\n        padding: 0;\n        display: flex;\n        margin: 0 0 0 10px;\n        li{\n            list-style-type: none;\n        }\n    }\n    @media only screen and (max-width: 768px) {\n        display: none;\n    }\n}\n",
                     "styleUrl": "./navigation-bar.component.scss"
                 }
             ],
@@ -1360,12 +1444,61 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "header {\n    background-color: #ef4a4a;\n\n    &:before {\n        content: \"\";\n        height: 150px;\n        width: 100%;\n        position: absolute;\n        background-size: cover !important;\n        background: url(\"../../../assets/img/header_bg2.png\") no-repeat center\n            center;\n    }\n\n    .container {\n        position: relative;\n        background: url(\"../../../assets/img/header_effect.svg\") no-repeat center\n            140px;\n\n        &:before,\n        &:after {\n            top: 0;\n            content: \"\";\n            width: 1px;\n            height: 150px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, 0.1);\n        }\n\n        &:before {\n            left: 0;\n        }\n\n        &:after {\n            right: 0;\n        }\n    }\n\n    #header-brand {\n        text-align: center;\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        a {\n            pointer-events: none;\n        }\n\n        &:before, &:after {\n            left: 0;\n            right: 0;\n            margin: 0 auto;\n            width: 1px;\n            content: \"\";\n            height: 25px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        &:before {\n            top: 0;\n        }\n\n        &:after {\n            bottom: 0;\n        }\n    }\n\n    #sponsors {\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        &:before {\n            right: -10px;\n            top: 75px;\n            content: \"\";\n            width: 20px;\n            height: 1px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        a {\n            pointer-events: none;\n\n            img {\n                float: right;\n                margin-right: 10px;\n            }\n        }\n    }\n}\n",
+                    "data": "header {\n    background-color: #ef4a4a;\n\n    &:before {\n        content: \"\";\n        height: 150px;\n        width: 100%;\n        position: absolute;\n        background-size: cover !important;\n        background: url(\"../../../assets/img/header_bg2.png\") no-repeat center\n            center;\n    }\n\n    .container {\n        position: relative;\n        background: url(\"../../../assets/img/header_effect.svg\") no-repeat center\n            140px;\n\n        &:before,\n        &:after {\n            top: 0;\n            content: \"\";\n            width: 1px;\n            height: 150px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, 0.1);\n        }\n\n        &:before {\n            left: 0;\n        }\n\n        &:after {\n            right: 0;\n        }\n    }\n\n    #header-brand {\n        text-align: center;\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n\n        a {\n            pointer-events: none;\n        }\n\n        &:before, &:after {\n            left: 0;\n            right: 0;\n            margin: 0 auto;\n            width: 1px;\n            content: \"\";\n            height: 25px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        &:before {\n            top: 0;\n        }\n\n        &:after {\n            bottom: 0;\n        }\n    }\n\n    #sponsors {\n        display: flex;\n        height: 150px;\n        justify-content: center;\n        flex-direction: column;\n        @media only screen and (max-width: 768px) {\n            display: none;\n        }\n\n        &:before {\n            right: -10px;\n            top: 75px;\n            content: \"\";\n            width: 20px;\n            height: 1px;\n            position: absolute;\n            background-color: rgba(0, 0, 0, .10);\n        }\n\n        a {\n            pointer-events: none;\n\n            img {\n                float: right;\n                margin-right: 10px;\n            }\n        }\n    }\n\n\n}\n",
                     "styleUrl": "./header.component.scss"
                 }
             ],
             "stylesData": "",
             "templateData": "<header>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg col-md-5\">\n                <app-navigation-bar [listItems]=\"listItems\"></app-navigation-bar>\n            </div>\n            <div id=\"header-brand\" class=\"col-lg-2 col-md-2\">\n                <a href=\"\">\n                    <img src=\"assets/img/hydra_logo.svg\">\n                </a>\n            </div>\n            <div id=\"sponsors\" class=\"col-lg-5 col-md-5\">\n                <a href=\"https://www.anareus.cz/\" target=\"_blank\">\n                    <img src=\"assets/img/sponzored_by_anareus.svg\">\n                </a>\n            </div>\n        </div>\n    </div>\n</header>\n"
+        },
+        {
+            "name": "ParagraphComponent",
+            "id": "component-ParagraphComponent-fcba66d6fe9a6e0e2e09c70054b27e2286619c8dd0822685e249487f95d86e56a8157cec1fdac6443cda6e55dbfd90e806ba48a173b895114febf10111b67cf9",
+            "file": "src/stories/atoms/paragraph/paragraph.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-paragraph",
+            "styleUrls": [
+                "./paragraph.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./paragraph.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "content",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from \"@angular/core\";\n\n@Component({\n    selector: 'app-paragraph',\n    templateUrl: './paragraph.component.html',\n    styleUrls: ['./paragraph.component.scss'],\n})\nexport class ParagraphComponent {\n    @Input()\n    content: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./paragraph.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>{{ content }}</p>\n"
         },
         {
             "name": "PartnersComponent",
@@ -1541,13 +1674,13 @@
     "modules": [
         {
             "name": "AboutUsModule",
-            "id": "module-AboutUsModule-fdd990d29b2313bd1e2ae8aa2c00e3977cf7c51128484591b45f03bb06eb5221a4c9c84f57100cac363fe9146bbc75bbff87c96b64eb5ee5580f97b5b215f462",
+            "id": "module-AboutUsModule-2e481a62ee7ef0fcbec1b958508031b01a4ae8fdcd4332dc975844e92f7ba244e785f6533f449ec1f9e185453647e1ca744db783de09a8ca66c47d55fc27ed71",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/about-us/about-us.module.ts",
             "methods": [],
-            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {AboutUsComponent} from './about-us.component';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {AboutUsRoutingModule} from \"@app/about-us/about-us-routing.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        AtomsModule,\n        AboutUsRoutingModule\n    ],\n    exports: [\n        AboutUsComponent\n    ],\n    declarations: [AboutUsComponent]\n})\n\nexport class AboutUsModule {\n}\n",
+            "sourceCode": "import {NgModule} from '@angular/core';\nimport {CommonModule} from '@angular/common';\nimport {AboutUsComponent} from './about-us.component';\nimport {AtomsModule} from \"@atoms/atoms.module\";\nimport {AboutUsRoutingModule} from \"@app/about-us/about-us-routing.module\";\nimport {TemplatesModule} from \"../../stories/templates/templates.module\";\n\n@NgModule({\n    imports: [\n        CommonModule,\n        AtomsModule,\n        AboutUsRoutingModule,\n        TemplatesModule\n    ],\n    exports: [\n        AboutUsComponent\n    ],\n    declarations: [AboutUsComponent]\n})\n\nexport class AboutUsModule {\n}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1569,6 +1702,9 @@
                         },
                         {
                             "name": "AtomsModule"
+                        },
+                        {
+                            "name": "TemplatesModule"
                         }
                     ]
                 },
@@ -1780,13 +1916,13 @@
         },
         {
             "name": "AtomsModule",
-            "id": "module-AtomsModule-370373a6898e3a3c22ba29c10e1c7d79f32c2b32c4e029ddc4b49cd4920b1b71c6abe060805202626c9a35245a7f0169392ea2ceee17865796e515e5dfa604ae",
+            "id": "module-AtomsModule-a61dfacaf7c1423f8d9600119a29f63296bff29a8ded204b4303f45ffa9fd47aa5c098fcff99795bc13d5b33d122ecf3a07639178762f9459fdede3ca9cec591",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/atoms/atoms.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport ButtonComponent from \"@atoms/buttons/button/button.component\";\nimport {LinkButtonComponent} from \"@atoms/buttons/link-button/link-button.component\";\nimport {LinkComponent} from \"@atoms/links/link/link.component\";\nimport {TitleComponent} from \"@atoms/title/title.component\";\nimport {ImageBlockComponent} from \"@atoms/image-block/image-block.component\";\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];\n\nconst COMPONENTS = [\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n];\n\n@NgModule({\n    imports: [...IMPORTS_EXPORTS],\n    declarations: [...COMPONENTS],\n    exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n    schemas: [NO_ERRORS_SCHEMA],\n})\nexport class AtomsModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport ButtonComponent from \"@atoms/buttons/button/button.component\";\nimport {LinkButtonComponent} from \"@atoms/buttons/link-button/link-button.component\";\nimport {LinkComponent} from \"@atoms/links/link/link.component\";\nimport {TitleComponent} from \"@atoms/title/title.component\";\nimport {ImageBlockComponent} from \"@atoms/image-block/image-block.component\";\nimport {ParagraphComponent} from \"@atoms/paragraph/paragraph.component\";\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule];\n\nconst COMPONENTS = [\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent,\n    ParagraphComponent\n];\n\n@NgModule({\n    imports: [...IMPORTS_EXPORTS],\n    declarations: [...COMPONENTS],\n    exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n    schemas: [NO_ERRORS_SCHEMA],\n})\nexport class AtomsModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1806,6 +1942,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -1830,6 +1969,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -2279,6 +2421,9 @@
                             "name": "LinkComponent"
                         },
                         {
+                            "name": "ParagraphComponent"
+                        },
+                        {
                             "name": "TitleComponent"
                         }
                     ]
@@ -2301,6 +2446,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -2347,6 +2495,9 @@
                             "name": "LinkComponent"
                         },
                         {
+                            "name": "ParagraphComponent"
+                        },
+                        {
                             "name": "TitleComponent"
                         }
                     ]
@@ -2369,6 +2520,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -2474,13 +2628,13 @@
         },
         {
             "name": "TemplatesModule",
-            "id": "module-TemplatesModule-2f3bf9b19875b31545be4f401aae9c9ec283fc95492d348437e43147ae03e5babaa8d465902a915883a311d91e7be78547e785404133084862eb0a62c580cd81",
+            "id": "module-TemplatesModule-58f5b1fbb6172d88c4309586a2977ef90d60b8f3b2e65e797b0042993371f19abea2b4e36181e6803f12fe3217755fe2e9689503496656c511defb6223c55a93",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/templates/templates.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {OrganismsModule} from \"@organisms/organisms.module\";\nimport TemplateHomePageComponent from \"./home-page/home-page.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, OrganismsModule];\n\nconst COMPONENTS = [\n    TemplateHomePageComponent,\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class TemplatesModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport {OrganismsModule} from \"@organisms/organisms.module\";\nimport TemplateHomePageComponent from \"./home-page/home-page.component\";\nimport AboutUsPageComponent from \"./about-us-page/about-us-page.component\";\n\nconst IMPORTS_EXPORTS = [RouterModule, CommonModule, OrganismsModule];\n\nconst COMPONENTS = [\n    TemplateHomePageComponent,\n    AboutUsPageComponent\n];\n\n@NgModule({\n  imports: [...IMPORTS_EXPORTS],\n  declarations: [...COMPONENTS],\n  exports: [...IMPORTS_EXPORTS, ...COMPONENTS],\n  schemas: [NO_ERRORS_SCHEMA],\n})\nexport class TemplatesModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -2500,6 +2654,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -2524,6 +2681,9 @@
                         },
                         {
                             "name": "LinkComponent"
+                        },
+                        {
+                            "name": "ParagraphComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -2553,6 +2713,16 @@
                 "type": "NodeRequire"
             },
             {
+                "name": "AboutUsPage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/about-us-page/about-us-page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "COMPONENTS",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2560,7 +2730,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n]"
+                "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent,\n    ParagraphComponent\n]"
             },
             {
                 "name": "COMPONENTS",
@@ -2590,7 +2760,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n    TemplateHomePageComponent,\n]"
+                "defaultValue": "[\n    TemplateHomePageComponent,\n    AboutUsPageComponent\n]"
             },
             {
                 "name": "context",
@@ -2620,7 +2790,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\n    production: false\n}"
+                "defaultValue": "{\n    production: false,\n\n}"
+            },
+            {
+                "name": "FinalAboutUs",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/pages/final-about-us.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "FinalHomePage",
@@ -2656,7 +2836,7 @@
                 "name": "ImageBlock",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                "file": "src/stories/atoms/image-block/image-block.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2666,7 +2846,7 @@
                 "name": "ImageBlock",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2776,7 +2956,7 @@
                 "name": "PrimaryLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/links/link/link.stories.ts",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2786,7 +2966,7 @@
                 "name": "PrimaryLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
+                "file": "src/stories/atoms/links/link/link.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2835,6 +3015,26 @@
                 "name": "template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ImageBlockComponent>",
+                "defaultValue": "(args: ImageBlockComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ParagraphComponent>",
+                "defaultValue": "(args: ParagraphComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/atoms/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2865,11 +3065,11 @@
                 "name": "template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/atoms/image-block/image-block.stories.ts",
+                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ImageBlockComponent>",
-                "defaultValue": "(args: ImageBlockComponent) => ({\n    props: args,\n})"
+                "type": "Story<LinkButtonComponent>",
+                "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
             },
             {
                 "name": "template",
@@ -2880,16 +3080,6 @@
                 "deprecationMessage": "",
                 "type": "Story<LinkComponent>",
                 "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/atoms/buttons/link-button/link-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<LinkButtonComponent>",
-                "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2905,11 +3095,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/pages/final-about-us.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AboutUsComponent>",
+                "defaultValue": "(args: AboutUsComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/organisms/header/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<OrganismsHeaderComponent>",
                 "defaultValue": "(args: OrganismsHeaderComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/templates/about-us-page/about-us-page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AboutUsPageComponent>",
+                "defaultValue": "(args: AboutUsPageComponent) => ({\n    props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2930,6 +3140,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Title",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "template.bind({})"
             },
             {
                 "name": "Title",
@@ -3074,6 +3294,28 @@
                     "defaultValue": "mainModule && mainModule.filename || ''"
                 }
             ],
+            "src/stories/templates/about-us-page/about-us-page.stories.ts": [
+                {
+                    "name": "AboutUsPage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/about-us-page/about-us-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/templates/about-us-page/about-us-page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AboutUsPageComponent>",
+                    "defaultValue": "(args: AboutUsPageComponent) => ({\n    props: args,\n})"
+                }
+            ],
             "src/stories/atoms/atoms.module.ts": [
                 {
                     "name": "COMPONENTS",
@@ -3083,7 +3325,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent\n]"
+                    "defaultValue": "[\n    ButtonComponent,\n    LinkButtonComponent,\n    LinkComponent,\n    TitleComponent,\n    ImageBlockComponent,\n    ParagraphComponent\n]"
                 },
                 {
                     "name": "IMPORTS_EXPORTS",
@@ -3149,7 +3391,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n    TemplateHomePageComponent,\n]"
+                    "defaultValue": "[\n    TemplateHomePageComponent,\n    AboutUsPageComponent\n]"
                 },
                 {
                     "name": "IMPORTS_EXPORTS",
@@ -3204,7 +3446,29 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\n    production: false\n}"
+                    "defaultValue": "{\n    production: false,\n\n}"
+                }
+            ],
+            "src/stories/pages/final-about-us.stories.ts": [
+                {
+                    "name": "FinalAboutUs",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/final-about-us.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/pages/final-about-us.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AboutUsComponent>",
+                    "defaultValue": "(args: AboutUsComponent) => ({\n    props: args,\n})"
                 }
             ],
             "src/stories/pages/final-home-page.stories.ts": [
@@ -3273,28 +3537,6 @@
                     "defaultValue": "(args: TemplateHomePageComponent) => ({\n    props: args,\n})"
                 }
             ],
-            "src/stories/molecules/image-gallery/image-gallery.stories.ts": [
-                {
-                    "name": "ImageBlock",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "template.bind({})"
-                },
-                {
-                    "name": "template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ImageGalleryComponent>",
-                    "defaultValue": "(args: ImageGalleryComponent) => ({\n    props: args,\n})"
-                }
-            ],
             "src/stories/atoms/image-block/image-block.stories.ts": [
                 {
                     "name": "ImageBlock",
@@ -3315,6 +3557,28 @@
                     "deprecationMessage": "",
                     "type": "Story<ImageBlockComponent>",
                     "defaultValue": "(args: ImageBlockComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/molecules/image-gallery/image-gallery.stories.ts": [
+                {
+                    "name": "ImageBlock",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/molecules/image-gallery/image-gallery.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ImageGalleryComponent>",
+                    "defaultValue": "(args: ImageGalleryComponent) => ({\n    props: args,\n})"
                 }
             ],
             "src/stories/atoms/buttons/button/Button.stories.ts": [
@@ -3403,28 +3667,6 @@
                     "defaultValue": "{\n\n    home: {\n        main: 'home',\n    },\n\n    about_us: {\n        main: 'about-us',\n    },\n\n    partners: {\n        main: 'partnerek',\n    },\n\n    events: {\n        main: 'esemenyek',\n    },\n\n    contact: {\n        main: 'kapcsolat',\n    }\n}"
                 }
             ],
-            "src/stories/atoms/links/link/link.stories.ts": [
-                {
-                    "name": "PrimaryLink",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/atoms/links/link/link.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "template.bind({})"
-                },
-                {
-                    "name": "template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/atoms/links/link/link.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<LinkComponent>",
-                    "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/stories/atoms/buttons/link-button/link-button.stories.ts": [
                 {
                     "name": "PrimaryLink",
@@ -3455,6 +3697,50 @@
                     "deprecationMessage": "",
                     "type": "Story<LinkButtonComponent>",
                     "defaultValue": "(args: LinkButtonComponent) => ({\n    props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/links/link/link.stories.ts": [
+                {
+                    "name": "PrimaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
+                },
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/links/link/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LinkComponent>",
+                    "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/atoms/paragraph/paragraph.stories.ts": [
+                {
+                    "name": "template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ParagraphComponent>",
+                    "defaultValue": "(args: ParagraphComponent) => ({\n    props: args,\n})"
+                },
+                {
+                    "name": "Title",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "template.bind({})"
                 }
             ],
             "src/stories/atoms/title/title.stories.ts": [
@@ -3650,7 +3936,7 @@
                 "linktype": "component",
                 "name": "AboutUsComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -3751,7 +4037,7 @@
                 "linktype": "component",
                 "name": "HomeComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -3925,7 +4211,7 @@
                 "linktype": "component",
                 "name": "ImageBlockComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -3973,6 +4259,35 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/paragraph/paragraph.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ParagraphComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/atoms/paragraph/paragraph.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Title",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -4134,6 +4449,26 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/pages/final-about-us.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FinalAboutUs",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/pages/final-about-us.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/pages/final-home-page.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -4145,6 +4480,35 @@
             },
             {
                 "filePath": "src/stories/pages/final-home-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/about-us-page/about-us-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AboutUsPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/about-us-page/about-us-page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AboutUsPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/templates/about-us-page/about-us-page.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
