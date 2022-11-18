@@ -71,6 +71,9 @@ header {
         height: 150px;
         justify-content: center;
         flex-direction: column;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
 
         &:before {
             right: -10px;
@@ -91,4 +94,6 @@ header {
             }
         }
     }
+
+
 }
